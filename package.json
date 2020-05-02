@@ -9,10 +9,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build",
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "dev": "concurrently \"npm run start\" \"npm run watch:sass\"",
     "build": "react-scripts build",
