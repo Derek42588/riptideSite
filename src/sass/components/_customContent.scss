@@ -1,0 +1,245 @@
+.customContent {
+  color: $color-primary-dark;
+
+  width: 100%;
+  padding: 2rem;
+
+  display: grid;
+
+  &__title {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    @include respond(bpSmaller){
+      font-size: 5rem;
+    }
+    @include respond(phone){
+      font-size: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    @include respond(micro){
+      font-size: 3rem;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &__subtitle {
+      font-size: 4rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      
+      @include respond(bpSmaller) {
+        text-align: center;
+      }
+
+      &--pvp {
+          grid-column: 1 / -1;
+          grid-row: 1 / span 1;
+          padding-bottom: 3rem;
+      }
+
+      &--qol {
+        padding-bottom: 3rem;
+      }
+      &--quests {
+          grid-column: 1 / -1;
+          grid-row: 1 / span 1;
+          padding-bottom: 6rem;
+          padding-top: 6rem;
+          justify-self: end;
+
+          @include respond(bpSmaller) {
+            text-align: center;
+            justify-self: center;
+          }
+      }
+
+      &--vendors {
+        padding: 6rem 0;
+      }
+  }
+
+  &__list {
+      list-style: none;
+      line-height: 1.7;
+      padding: 2rem;
+
+
+      &--pvp {
+          grid-column: 1 / span 1;
+          grid-row: 2 / span 1;
+          padding: 5rem;
+
+          @include respond(bpSmaller) {
+            grid-column: 1 / span 2;
+            margin-right: 2rem;
+          }
+
+          box-shadow: $box-shadow-dark;
+  background-color: $color-white;
+  opacity: .75;
+      }
+
+      &--streaks {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        font-size: 1.33rem;
+
+        box-shadow: $box-shadow-dark;
+  background-color: $color-primary-dark;
+  color: $color-white;
+  opacity: .75;
+  align-self: end;
+
+
+      }
+
+      &--qol {
+        box-shadow: $box-shadow-dark;
+  background-color: $color-white;
+  color: $color-primary-dark;
+  opacity: .75;
+  justify-self: center;
+  
+
+      }
+      &--quests {
+        box-shadow: $box-shadow-dark;
+  background-color: $color-white;
+  color: $color-primary-dark;
+  opacity: .75;
+  justify-self: end;
+
+  @include respond(bpSmaller) {
+    text-align: center;
+    justify-self: center;
+  }
+
+      }
+
+      &--vendors {
+        box-shadow: $box-shadow-dark;
+        background-color: $color-primary-dark;
+        color: $color-white;
+        opacity: .75;
+        justify-self: start;
+
+        @include respond(bpSmaller) {
+          text-align: center;
+          justify-self: center;
+        }
+      }
+  }
+
+  &__list-item{
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+  }
+
+  &__content-box {
+      padding: 2rem;
+
+      @include respond(bpSmaller) {
+        font-size: 1.5rem;
+      }
+
+    &--pvp {
+        background-image: linear-gradient(rgba($color-primary-dark, .15), rgba($color-white, .55)), url(../img/tlmMansion.PNG);
+        // background-image: linear-gradient(rgba($color-white, .85), rgba($color-primary-dark, .55)), url(../img/tlmMansion.PNG);
+        background-size: cover;
+        // ^ take out;
+        display: grid;
+
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: min-content min-content 1fr;
+
+    }
+
+    
+    &--qol {
+      background-image: linear-gradient(rgba($color-white, .15), rgba($color-primary-dark, .55)), url(../img/asheronsCastle.PNG);
+      // background-image: linear-gradient(rgba($color-white, .85), rgba($color-primary-dark, .55)), url(../img/tlmMansion.PNG);
+      background-size: cover;
+
+      color: $color-white;
+      text-align: center;
+
+      display: grid;
+
+    }
+
+    &--quests {
+      background-image: linear-gradient(rgba($color-primary-dark, .15), rgba($color-white, .55)), url(../img/diCustom.png);
+      // background-image: linear-gradient(rgba($color-white, .85), rgba($color-primary-dark, .55)), url(../img/tlmMansion.PNG);
+      background-size: cover;
+
+      color: $color-primary-dark;
+
+      display: grid;
+
+    }
+    &--vendors {
+      background-image: linear-gradient(rgba($color-white, .15), rgba($color-primary-dark, .55)), url(../img/pkaCustom.PNG);
+      // background-image: linear-gradient(rgba($color-white, .85), rgba($color-primary-dark, .55)), url(../img/tlmMansion.PNG);
+      background-size: cover;
+
+      color: $color-white;
+
+      display: grid;
+
+    }
+
+
+            
+
+
+
+  }
+
+//   &__viewTab {
+//     display: flex;
+   
+//     width: 66%;
+//     justify-self: center;
+//   }
+
+//   &__viewTab-item {
+//     width: 100%;
+//     text-align: center;
+//     border-right: 2px solid $color-primary-dark;
+//     // border-bottom: 2px solid $color-primary-dark;
+//     padding: 1rem;
+//   }
+
+&__list-subtitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  text-align: center;
+
+  @include respond(micro) {
+    font-size: 1rem;
+  }
+
+}
+
+}
+
+// .current-tab {
+//     background-color: $color-primary-middle;
+//     color: $color-white;
+// }
+
+// .inactive-tab {
+//     opacity: 80%;
+//     background-color: $color-white;
+//     color: $color-primary-dark;
+// }

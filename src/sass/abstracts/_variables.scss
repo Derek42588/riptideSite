@@ -1,0 +1,27 @@
+//COLORS
+$color-secondary-light: #dcdcdd;
+$color-secondary-dark: #c5c3c6;
+
+$color-background: #46494c;
+
+$color-tertiary-dark: #4c5c68;
+// $color-primary-light: #ff392e;
+$color-primary-light: #bb271f;
+$color-primary-dark: #bb271f;
+$color-primary-middle: #e43127;
+
+$color-white: #fff;
+$color-black: #000;
+
+//Box Shadows
+
+$box-shadow-light: 0 1.5rem 4rem rgba($color-black, .15);
+$box-shadow-medium: 0 1.5rem 4rem rgba($color-black, .55);
+$box-shadow-dark: 0 1.5rem 4rem rgba($color-black, 1);
+
+//Gradients
+
+$red-to-white: linear-gradient(rgba($color-primary-dark, .15), rgba($color-white, .75));
+$full-red-to-white: linear-gradient(rgba($color-primary-dark, .95), rgba($color-white, .75));
+$white-to-red: linear-gradient(rgba($color-white, .15), rgba($color-primary-dark, .75));
+$light-white-to-red: linear-gradient(rgba($color-white, 1), rgba($color-primary-dark, .75));

@@ -1,25 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/style.css';
+import {BrowserRouter, Route } from 'react-router-dom';
+import Landing from './components/Landing';
+import ChangelogList from './components/Changelog/ChangelogList';
+import Header from './components/Header';
+import Setup from './components/Setup';
+import CustomContent from './components/CustomContent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className = "fullApp">
+        <Header />
+        <Route exact path = "/" component = {Landing} />
+        <Route exact path = "/changelog" component = {ChangelogList} />
+        <Route exact path = "/customcontent" component = {CustomContent} />
+        <Route exact path = "/setup" component = {Setup} />
+      </div>
+    </BrowserRouter>
+    // <div className="App">
+    //   <div className="container">
+        // <header className="header">
+        //   <ul className="nav">
+        //     <li className="nav__item">
+        //       <a href="#" className="nav__link">
+        //         Links
+        //       </a>
+        //     </li>
+        //     <li className="nav__item">
+        //       <a href="#" className="nav__link">
+        //         Setup
+        //       </a>
+        //     </li>
+        //     <li className="nav__item">
+        //       <a href="#" className="nav__link">
+        //         Changelog
+        //       </a>
+        //     </li>
+        //     <li className="nav__item">
+        //       <a href="#" className="nav__link">
+        //         Known Bugs
+        //       </a>
+        //     </li>
+        //     <li className="nav__item">
+        //       <a href="#" className="nav__link">
+        //         Custom Content
+        //       </a>
+        //     </li>
+        //   </ul>
+        // </header>
+    //     {Info()}
+    //     {Changelog()}
+    //     <div className="gallery">Gallery</div>
+    //     <footer className="footer">Footer</footer>
+    //   </div>
+    // </div>
   );
 }
 

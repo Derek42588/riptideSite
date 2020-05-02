@@ -1,0 +1,33 @@
+.caps-italics {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.font-large {
+    font-size: 4.5rem;
+}
+
+.header-large {
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-align: center;
+
+    &--red {
+        color: $color-primary-light
+    }
+    &--white {
+        color: $color-white
+    }
+}
+.header-medium {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+
+    &--red {
+        color: $color-primary-light
+    }
+    &--white {
+        color: $color-white
+    }
+}

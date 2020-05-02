@@ -1,0 +1,343 @@
+.tournament {
+  //title winner winner-name winner-image prizes bracket row(mods) player player-icon player-name
+  //grid-template-columns: repeat(10, minmax(5vw, 9vw)); name: display none; matchup grid-gap: 1.5rem;
+
+padding: 1rem;
+
+  display: grid;
+  grid-column: 1 / -1;
+
+  grid-template-columns: 1fr 1fr;
+
+  background-image: $white-to-red;
+  color: $color-primary-dark;
+
+  &__header {
+    grid-column: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+    font-size: 6rem;
+    letter-spacing: 0.2em;
+    color: $color-primary-dark;
+    padding: 5rem 0;
+
+    @include respond(bpSmaller){
+      font-size: 5rem;
+      padding-bottom: 3rem;
+    }
+    @include respond(phone){
+      font-size: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    @include respond(micro) {
+      font-size: 3rem;
+    }
+  }
+  &__title-card {
+    box-shadow: $box-shadow-dark;
+    background-image: linear-gradient(rgba($color-white, .15), rgba($color-primary-dark, .65)), url(../img/lifestone.jpg);
+    background-size: cover;
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 8rem;
+    color: $color-white;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+  grid-template-columns: 1fr;
+  grid-gap: 10rem;
+
+  @include respond(micro) {
+    margin: 0 4rem;
+  }
+   
+  }
+
+  &__title {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+
+    // @include respond(bpSmaller){
+    //   font-size: 5rem;
+    //   padding-bottom: 3rem;
+    // }
+    // @include respond(phone){
+    //   font-size: 4rem;
+    //   padding-bottom: 3rem;
+    // }
+  }
+
+  &__winner {
+    grid-column: 1 / -1;
+    width: 50%;
+    // display: flex;
+    // flex-flow: column;
+    // align-items: center;
+    justify-self: center;
+    margin-top: 4rem;
+
+    @include respond(bpSmaller){
+
+    }
+    @include respond(phone){
+      width: 80%;
+    }
+  }
+  &__winner-name {
+  }
+  &__winner-image {
+  }
+  &__prizes {
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    margin-top: 2rem;
+
+    &--prize {
+      display: flex;
+    }
+    &--icon {
+      margin-left: 0.5rem;
+    }
+  }
+  &__bracket {
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-columns: repeat(10, minmax(min-content, 10vw));
+    grid-template-rows: min-content 1fr min-content 1fr min-content 1fr min-content 1fr min-content 1fr;
+    grid-gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    @include respond(bpSmaller){
+      grid-template-columns: repeat(10, minmax(5vw, 9vw));
+    }
+    @include respond(micro){
+      grid-template-rows: min-content 1fr min-content 1fr min-content 1fr min-content 1fr 1fr min-content 1fr;
+    }
+
+    .header-medium {
+      grid-column: 4 / span 4;
+      justify-self: center;
+      align-self: center;
+      padding: 2rem;
+
+      @include respond(bpSmaller){
+        font-size: 5rem;
+        padding-bottom: 3rem;
+      }
+      @include respond(phone){
+        font-size: 4rem;
+        padding-bottom: 3rem;
+      }
+
+      &--championship {
+        grid-row: 1 / span 1;
+      }
+      &--semifinals {
+        grid-row: 3 / span 1;
+      }
+      &--quarterfinals {
+        grid-row: 5 / span 1;
+      }
+      &--round-2 {
+        grid-row: 7 / span 1;
+        
+      }
+      &--round-1 {
+        grid-row: 9 / span 1;
+        @include respond(micro){
+          grid-row: 10 / span 1;
+        }
+      }
+    }
+  }
+  &__matchup {
+    // display: flex;
+    // justify-content: space-between;
+
+    line-height: 1.5;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: $box-shadow-dark;
+    background-color: $color-white;
+    //   opacity: .65;
+    @include respond(bpSmaller){
+      grid-gap: 1.5rem;
+      padding: 1rem;
+    }
+    
+
+    &--round-1 {
+      grid-column: 5 / span 2;
+      grid-row: 10 / span 1;
+
+      @include respond(micro){
+        grid-row: 11 / span 1;
+      }
+    }
+
+    &--championship {
+      grid-column: 5 / span 2;
+      grid-row: 2 / span 1;
+    }
+
+    &--semis-1 {
+      grid-column: 4 / span 2;
+      grid-row: 4 / span 1;
+    }
+    &--semis-2 {
+      grid-column: 6 / span 2;
+      grid-row: 4 / span 1;
+    }
+    &--quarters-1 {
+      grid-column: 2 / span 2;
+      grid-row: 6 / span 1;
+    }
+    &--quarters-2 {
+      grid-column: 4 / span 2;
+      grid-row: 6 / span 1;
+    }
+    &--quarters-3 {
+      grid-column: 6 / span 2;
+      grid-row: 6 / span 1;
+    }
+    &--quarters-4 {
+      grid-column: 8 / span 2;
+      grid-row: 6 / span 1;
+    }
+
+    &--round-2--1 {
+      grid-column: 2 / span 1;
+      grid-row: 8 / span 1;
+       @include respond(micro){
+        grid-column: 2 / span 2;
+      }
+    }
+    &--round-2--2 {
+      grid-column: 3 / span 1;
+
+      grid-row: 8 / span 1;
+       @include respond(micro){
+        grid-column: 4 / span 2;
+      }
+    }
+    &--round-2--3 {
+      grid-column: 4 / span 1;
+
+      grid-row: 8 / span 1;
+       @include respond(micro){
+        grid-column: 6 / span 2;
+      }
+    }
+    &--round-2--4 {
+      grid-column: 5 / span 1;
+
+      grid-row: 8 / span 1;
+       @include respond(micro){
+        grid-column: 8 / span 2;
+      }
+    }
+    &--round-2--5 {
+      grid-column: 6 / span 1;
+
+      grid-row: 8 / span 1;
+       @include respond(micro){
+          grid-row: 9 / span 1;
+          grid-column: 2 / span 2;
+
+        }
+    }
+    &--round-2--6 {
+      grid-column: 7 / span 1;
+
+      grid-row: 8 / span 1;
+       @include respond(micro){
+          grid-row: 9 / span 1;
+          grid-column: 4 / span 2;
+
+        }
+    }
+    &--round-2--7 {
+      grid-column: 8 / span 1;
+
+      grid-row: 8 / span 1;
+       @include respond(micro){
+          grid-row: 9 / span 1;
+          grid-column: 6 / span 2;
+        }
+    }
+    &--round-2--8 {
+      grid-column: 9 / span 1;
+      grid-row: 8 / span 1;
+       @include respond(micro){
+          grid-row: 9 / span 1;
+          grid-column: 8 / span 2;
+
+        }
+    }
+  }
+  &__row {
+    //   display: flex;
+
+    //   &--1 {
+    //     grid-column: 5 / span 2;
+    //     grid-row: 2 / span 1;
+    //   }
+    //   &--4 {
+    //     grid-row: 5 / span 1;
+    //   }
+    //   &--5 {
+    //     grid-column: 5 / span 2;
+    //     grid-row: 6 / span 1;
+    //   }
+  }
+  &__player {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+
+    &--loser {
+      align-self: end;
+      color: $color-black;
+    }
+
+    &--winner {
+      margin-top: 1rem;
+      align-self: start;
+      font-weight: 600;
+    }
+  }
+  &__player-icon {
+  }
+  &__player-name {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+
+    @include respond(bpSmaller){
+      display: none;
+    }
+
+  }
+
+  &__player-icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+  }
+
+  &__player-names {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+  .column-name {
+    display: flex;
+    flex-flow: column;
+  }
+}

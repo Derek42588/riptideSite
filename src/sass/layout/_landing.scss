@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    font-size: 2rem;
+    grid-column: 1 / -1;
+    overflow: hidden;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    z-index: -1;
+}
+
+
+.latestEvents {
+    grid-column: 1 / -1;
+    background-image: $light-white-to-red;
+    color: $color-primary-light;
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-align: center;
+    padding: 10rem 0;
+
+    @include respond(bpSmaller){
+        font-size: 5rem;
+        padding-bottom: 3rem;
+      }
+      @include respond(phone){
+        font-size: 4rem;
+        padding-bottom: 3rem;
+      }
+}
