@@ -4,7 +4,7 @@
   grid-column: 1 / -1;
   overflow: hidden;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  z-index: -1; }
+  z-index: 1; }
 
 .latestEvents {
   grid-column: 1 / -1;
@@ -28,7 +28,7 @@
   font-size: 2rem;
   padding: 3rem;
   overflow: hidden;
-  z-index: -1; }
+  z-index: 0; }
 
 .changelog {
   color: #bb271f;

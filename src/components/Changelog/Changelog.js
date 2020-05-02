@@ -1,11 +1,13 @@
 import React from 'react'
 import riptideGem from '../../img/RiptideGem.png';
+import { Link } from 'react-router-dom'
+
 
 
 const Changelog = () => {
     return (
         <div className="changelog">
-          <p className="changelog__title">New Augmentation and More</p>
+          {/* <p className="changelog__title">New Augmentation and More</p>
           <p className="changelog__date">4/24/20</p>
 
           <img src={riptideGem} alt="Riptide Gem of Knowledge" className="changelog__img"/>
@@ -39,10 +41,8 @@ const Changelog = () => {
               inside of it
             </li>
           </ul>
-          <a href = "/changelog">
-            <button className="btn">Past Updates</button>
-          </a>
-          </div>
+          <Link to = "/changelog" className = "nav__link">Past Updates</Link>
+          </div> */}
         </div>
     )
 }
