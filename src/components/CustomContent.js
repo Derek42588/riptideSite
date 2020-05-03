@@ -92,7 +92,7 @@ const CustomContent = () => {
     <ul className="customContent__list customContent__list--qol">
         <li className="customContent__list-item customContent__list-item--qol">No timer on Chorizite</li>
         <li className="customContent__list-item customContent__list-item--qol">20 hour aug gem</li>
-        <li className="customContent__list-item customContent__list-item--qol">Only have to flag aug once</li>
+        <li className="customContent__list-item customContent__list-item--qol">No need to flag for Bellas</li>
         <li className="customContent__list-item customContent__list-item--qol">Unlimited resets at Asheron's Castle</li>
         <li className="customContent__list-item customContent__list-item--qol">No timer on coals</li>
         <li className="customContent__list-item customContent__list-item--qol">Tailoring prices cut to 5 MMDs</li>

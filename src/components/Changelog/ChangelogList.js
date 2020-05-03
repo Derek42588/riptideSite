@@ -5,6 +5,8 @@ import shadowSlayer from '../../img/changelogImages/shadowSlayer.png'
 import darkIsle from '../../img/changelogImages/darkIsle.png'
 import ruschk from '../../img/changelogImages/ruschk.png'
 
+import stipends from '../../img/changelogImages/43020.png'
+
 
 
 // 4 / 1 / 20
@@ -15,15 +17,49 @@ const ChangelogList = () => {
   return (
     <div className="changelogList">
       <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">New Augmentation and More</p>
-        <p className="changelogList__item__date">4/24/20</p>
+        <p className="changelogList__item__title">Stipends, Hero Tokens</p>
+        <p className="changelogList__item__date">4/30/20</p>
 
         <img
-          src={riptideGem}
+          src={stipends}
           alt="Riptide Gem of Knowledge"
           className="changelogList__item__img"
         />
         <div className="changelogList__item__card">
+          <ul className="changelogList__item__text">
+            <li className="changelogList__item__item">Arcane augmentation vendor fixed</li>
+            <li className="changelogList__item__item">Laurana fixes</li>
+            <li className="changelogList__item__item">
+            Hero tokens implemented
+            </li>
+            <li className="changelogList__item__item">
+            Stipends are here
+            </li>
+            <li className="changelogList__item__item">
+            Master Fletcher's portal fixed
+            </li>
+            <li className="changelogList__item__item">
+            Virindi Mask vendors will now accept the masks from our Tailor
+            </li>
+            <li className="changelogList__item__item">
+            Creatures on DI are no longer Bunnies
+            </li>
+            <li className="changelogList__item__item">
+            Colored Eggs no longer drop.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">New Augmentation and More</p>
+        <p className="changelogList__item__date changelogList__item__date--left">4/24/20</p>
+
+        <img
+          src={riptideGem}
+          alt="Riptide Gem of Knowledge"
+          className="changelogList__item__img changelogList__item__img--right"
+        />
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">
               Garbled player names when a player loses their killing spree fixed
@@ -55,16 +91,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item">
-        <p className="changelogList__item__title changelogList__item__title--right">Big Ass Packs, Son</p>
-        <p className="changelogList__item__date changelogList__item__date--left">4/20/20</p>
+      <div className="changelogList__item changelogList__item--left">
+        <p className="changelogList__item__title">Big Ass Packs, Son</p>
+        <p className="changelogList__item__date">4/20/20</p>
 
         <img
           src={backpacks}
           alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img changelogList__item__img--right"
+          className="changelogList__item__img"
         />
-        <div className="changelogList__item__card changelogList__item__card--left">
+        <div className="changelogList__item__card">
           <ul className="changelogList__item__text">
             
             <li className="changelogList__item__item">
@@ -88,16 +124,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">EggTide and Shadow Slayer</p>
-        <p className="changelogList__item__date">4/18/20</p>
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">EggTide and Shadow Slayer</p>
+        <p className="changelogList__item__date changelogList__item__date--left">4/18/20</p>
 
         <img
           src={shadowSlayer}
-          alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img"
+          alt="Shadow Slayer"
+          className="changelogList__item__img changelogList__item__img--right"
         />
-        <div className="changelogList__item__card">
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">
             DI mobs have been overcome with a sense of Easter</li>
@@ -115,16 +151,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item">
-        <p className="changelogList__item__title changelogList__item__title--right">Tag, You're It</p>
-        <p className="changelogList__item__date changelogList__item__date--left">4/07/20</p>
+      <div className="changelogList__item changelogList__item--left">
+        <p className="changelogList__item__title">Tag, You're It</p>
+        <p className="changelogList__item__date">4/07/20</p>
 
         <img
           src={ruschk}
-          alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img changelogList__item__img--right"
+          alt="Ruschk"
+          className="changelogList__item__img"
         />
-        <div className="changelogList__item__card changelogList__item__card--left">
+        <div className="changelogList__item__card">
           <ul className="changelogList__item__text">
             
             <li className="changelogList__item__item">
@@ -149,16 +185,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">Dark Isle Baby!</p>
-        <p className="changelogList__item__date">4/01/20</p>
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">Dark Isle Baby!</p>
+        <p className="changelogList__item__date changelogList__item__date--left">4/01/20</p>
 
         <img
           src={darkIsle}
           alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img"
+          className="changelogList__item__img changelogList__item__img--right"
         />
-        <div className="changelogList__item__card">
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">
             Dark Isle release v1.0
