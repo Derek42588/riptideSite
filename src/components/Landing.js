@@ -32,6 +32,12 @@ const Landing = () => {
             <li className="changelog__item">
             Legendary Heartseeker now works correctly
             </li>
+            <li className="changelog__item">
+            XP Modifier reduced to 2.0X.
+            </li>
+            <li className="changelog__item">
+            Void nerf turned down to 30% until Aetheria come out
+            </li>
           </ul>
           <a href = "/changelog">
             <button className="btn">Past Updates</button>
