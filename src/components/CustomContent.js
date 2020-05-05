@@ -1,11 +1,4 @@
 import React from 'react';
-import dalomarArmor from '../img/VendorPics/dalomarArmor.PNG';
-import dalomarClothing from '../img/VendorPics/dalomarClothing.PNG';
-import dalomarDyes from '../img/VendorPics/dalomarDyes.PNG';
-import dalomarMagic from '../img/VendorPics/dalomarMagic.PNG';
-import dalomarWeapons from '../img/VendorPics/dalomarWeapons.PNG';
-
-
 
 // - PK kills are all logged on the backend
 // - PK trophies on PK kills

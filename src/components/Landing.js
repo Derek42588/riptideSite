@@ -29,6 +29,9 @@ const Landing = () => {
             <li className="changelog__item">
             You no longer have to flag for Aug gem. Flag check removed on the Aug Realm portal.
             </li>
+            <li className="changelog__item">
+            Legendary Heartseeker now works correctly
+            </li>
           </ul>
           <a href = "/changelog">
             <button className="btn">Past Updates</button>

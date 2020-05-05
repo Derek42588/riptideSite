@@ -1,7 +1,5 @@
 import React from 'react';
-import mobs from '../img/mobs.png';
-import vendor from '../img/vendor.png';
-import shadow from '../img/Teaser2.PNG';
+
 import icons from '../img/sprite.svg';
 
 const Info = () => {
