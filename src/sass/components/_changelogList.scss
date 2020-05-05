@@ -10,7 +10,6 @@
     grid-template-rows: min-content 1fr;
 
     @include respond(bpSmaller){
-        grid-template-rows: min-content 1fr;
         grid-template-rows: min-content min-content 1fr;
       }
 
