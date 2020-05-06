@@ -9,15 +9,18 @@
 
   display: grid;
 
-  @include respond(bpSmaller){
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-  }
 
-  grid-template-rows: 1fr 1fr;
+  // @include respond(bpSmaller){
+  //   grid-template-rows: auto;
+  //   grid-template-columns: 1fr;
+  // }
+
+  // grid-template-rows: 1fr 1fr;
 
   &__title {
-    grid-column: 1 / span 2;
+    grid-column: 1 / -1;
     align-self: center;
     justify-self: center;
     font-size: 6rem;
@@ -39,9 +42,10 @@
   }
 
   &__rules {
-    grid-column: 1 / span 1;
+    grid-column: 1 / -1;
     grid-row: 2 / span 1;
     padding: 2rem;
+    justify-self: center;
 
     box-shadow: $box-shadow-dark;
 
@@ -79,19 +83,64 @@
     margin-bottom: 2rem;
   }
 
-  &__img {
-    padding: 2rem;
+  &__winner-showcase {
+    margin-top: 3rem;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
 
-    &--1 {
-      width: 100%;
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
+    &__title {
+      grid-column: 1 / -1;
+      text-transform: uppercase;
+      justify-self: center;
+      align-self: center;
+
+      font-size: 4.5rem;
+      letter-spacing: 0.2em;
+      color: $color-primary-dark;
+
+
+
+    @include respond(bpSmaller){
+      font-size: 3.75rem;
+    }
+    @include respond(phone){
+      font-size: 3rem;
+    }
+
+    @include respond(micro){
+      font-size: 2.25rem;
+      letter-spacing: 0.1em;
+    }
+
+    &--winguyen {
+      font-size: 4rem;
+      @include respond(bpSmall){
+        font-size: 3.5rem;
+      }
 
       @include respond(bpSmaller){
-        grid-column: 1 / -1;
-        grid-row: 3 / span 1;
-        justify-self: center;
-      }
+    font-size: 3.25rem;
+  }
+  @include respond(phone){
+    font-size: 2.5rem;
+  }
+
+  @include respond(micro){
+    font-size: 1.75rem;
+    letter-spacing: 0.1em;
+  }
+
+    }
+    }
+
+    &__img {
+      width: 50%;
+      align-self: center;
+      justify-self: center;
+      grid-column: 1 / -1;
+      grid-row: 2 / span 1;
+      padding: 2rem;
     }
   }
 }

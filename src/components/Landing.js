@@ -3,6 +3,7 @@ import Info from './Info'
 import Tournament from './Tournament'
 import Easter from './Easter'
 import Fashion from './Fashion'
+import Cinco from './Cinco'
 
 import trinkets from '../img/changelogImages/trinkets.png'
 
@@ -46,6 +47,7 @@ const Landing = () => {
         </div>
         <h2 className="latestEvents">Latest Events</h2>
         {Fashion()}
+        {Cinco()}
         {Tournament()}
         {Easter()}
     </div>
