@@ -159,6 +159,10 @@
 
           &__item {
               margin-bottom: 2rem;
+
+              &--bold {
+                font-weight: bold;
+              }
               
               @include respond(bpMedium){
                 font-size: 1.4rem;
@@ -275,6 +279,7 @@
             }
           }
         }
+        // wiki content box article vendors title
 
         &__info {
           &__list {

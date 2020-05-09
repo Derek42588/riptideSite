@@ -77,6 +77,16 @@ const Wiki = () => {
       tags: 'quest dark isle flag flagging',
     },
     {
+      key: 'Legendary Chests',
+      title: 'Legendary Chests',
+      summary:
+        'Legendary Chests drop level 8 Spell Scrolls.  Otherwise work as retail',
+      thumbnail: 'legStub',
+      outsideFlag: "true",
+      link: "https://asheron.fandom.com/wiki/Legendary_Chest",
+      tags: 'legendary level 8 scrolls spells comps quills glyphs inks',
+    },
+    {
         key: 'Viss',
         title: 'Vissidal',
         summary:
@@ -103,13 +113,13 @@ const Wiki = () => {
         'Custom Vendors accepting the PK trophies that drop on death in PKA, Holtburg and GW for a multitude of useful items/tailoring armor and weapons.',
       thumbnail: 'vendorStub',
       outsideFlag: "false",  
-      tags: 'trophy trophies dmitri dalomar daniel tailoring coals items vendor fletching master laurana holtburg pka arena',
+      tags: 'trophy trophies dmitri dalomar daniel tailoring coals items vendor fletching master laurana holtburg pka arena quills glyphs inks',
     },
     {
       key: 'Quests',
       title: 'Added Quests',
       summary:
-        'Quests added by RT\'s content team on top of the standard GDLE release.  Includes: Shadow Slayer, Dark Isle Flagging, Black Pages of Salt and Ash Quest, Custom Arcane Lore Augmentation',
+        'Quests added by RT\'s content team on top of the standard GDLE.  As a rule, prior to Aug. 2008 means the content would not be in game.  Includes: Shadow Slayer, Dark Isle Flagging, Pages of Salt and Ash Quest, Custom Arcane Augmentation',
       thumbnail: 'questStub',
       outsideFlag: "false",  
       tags: 'Slayer Shadow Dark Isle DI Flagging flag black pages salt ash arcane lore aug',
@@ -242,7 +252,7 @@ const Wiki = () => {
         key: 'Quests',
         title: 'Added Quests',
         summary:
-          'Quests added by RT\'s content team on top of the standard GDLE release.  Includes: Shadow Slayer, Dark Isle Flagging, Black Pages of Salt and Ash Quest, Custom Arcane Lore Augmentation',
+          'Quests added by RT\'s content team on top of the standard GDLE.  As a rule, prior to Aug. 2008 means the content would not be in game.  Includes: Shadow Slayer, Dark Isle Flagging, Pages of Salt and Ash Quest, Custom Arcane Augmentation',
         thumbnail: 'questStub',
         outsideFlag: "false",  
         tags: 'Slayer Shadow Dark Isle DI Flagging flag black pages salt ash arcane lore aug',
@@ -257,7 +267,7 @@ const Wiki = () => {
           'Custom Vendors accepting the PK trophies that drop on death in PKA, Holtburg and GW for a multitude of useful items/tailoring armor and weapons.',
         thumbnail: 'vendorStub',
         outsideFlag: "false",  
-        tags: 'trophy trophies dmitri dalomar daniel tailoring coals items vendor fletching master laurana holtburg pka arena',
+        tags: 'trophy trophies dmitri dalomar daniel tailoring coals items vendor fletching master laurana holtburg pka arena quills glyphs inks',
       }
   ]
   const pvpStubs = [
@@ -499,9 +509,9 @@ const Wiki = () => {
   
                 {stub.outsideFlag === "true"
                 ? 
-                <Link to = {stub.link} className = "wiki__content-box__stub__button--link">
+                <a href = {stub.link} className = "wiki__content-box__stub__button--link">
                 <button className="wiki__content-box__stub__button wiki__content-box__stub__button--link__button">AC Wiki</button>
-                 </Link>              :
+                 </a>              :
                 <button
                   onClick={() => setView(stub.key)}
                   className="wiki__content-box__stub__button"
@@ -529,9 +539,9 @@ const Wiki = () => {
   
                 {stub.outsideFlag === "true"
                 ? 
-                <Link to = {stub.link} className = "wiki__content-box__stub__button--link">
+                <a href = {stub.link} className = "wiki__content-box__stub__button--link">
                 <button className="wiki__content-box__stub__button wiki__content-box__stub__button--link__button">AC Wiki</button>
-                 </Link>              :
+                 </a>              :
                 <button
                   onClick={() => setView(stub.key)}
                   className="wiki__content-box__stub__button"
@@ -559,9 +569,9 @@ const Wiki = () => {
   
                 {stub.outsideFlag === "true"
                 ? 
-                <Link to = {stub.link} className = "wiki__content-box__stub__button--link">
+                <a href = {stub.link} className = "wiki__content-box__stub__button--link">
                 <button className="wiki__content-box__stub__button wiki__content-box__stub__button--link__button">AC Wiki</button>
-                 </Link>              :
+                 </a>              :
                 <button
                   onClick={() => setView(stub.key)}
                   className="wiki__content-box__stub__button"
@@ -589,9 +599,9 @@ const Wiki = () => {
   
                 {stub.outsideFlag === "true"
                 ? 
-                <Link to = {stub.link} className = "wiki__content-box__stub__button--link">
+                <a href = {stub.link} className = "wiki__content-box__stub__button--link">
                 <button className="wiki__content-box__stub__button wiki__content-box__stub__button--link__button">AC Wiki</button>
-                 </Link>              :
+                 </a>              :
                 <button
                   onClick={() => setView(stub.key)}
                   className="wiki__content-box__stub__button"
@@ -620,15 +630,15 @@ const Wiki = () => {
 
               {stub.outsideFlag === "true"
               ? 
-              <Link to = {stub.link} className = "wiki__content-box__stub__button--link">
-              <button className="wiki__content-box__stub__button wiki__content-box__stub__button--link__button">AC Wiki</button>
-               </Link>              :
-              <button
-                onClick={() => setView(stub.key)}
-                className="wiki__content-box__stub__button"
-              >
-                Full Article
-              </button>
+              <a href = {stub.link} className = "wiki__content-box__stub__button--link">
+                <button className="wiki__content-box__stub__button wiki__content-box__stub__button--link__button">AC Wiki</button>
+                 </a>              :
+                <button
+                  onClick={() => setView(stub.key)}
+                  className="wiki__content-box__stub__button"
+                >
+                  Full Article
+                </button>
               }
             </div>
           ))}

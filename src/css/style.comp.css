@@ -1017,6 +1017,8 @@
               margin-bottom: 6rem; } }
           .wiki__content-box__article__info__list__item {
             margin-bottom: 2rem; }
+            .wiki__content-box__article__info__list__item--bold {
+              font-weight: bold; }
             @media only screen and (max-width: 62.5em) {
               .wiki__content-box__article__info__list__item {
                 font-size: 1.4rem; } }

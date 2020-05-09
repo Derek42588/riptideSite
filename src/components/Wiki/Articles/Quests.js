@@ -10,6 +10,7 @@ const Quests = () => {
             <img src={questsSide} alt="Professor of Creature Magic" className="wiki__content-box__article__side-img"/>
             <div className="wiki__content-box__article__info">
             <ul className="wiki__content-box__article__info__list wiki__content-box__article__info__list--quests">
+            <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bold">As a rule, content prior to Aug. 2008 is not in game</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--quests--1">Black Pages of Salt and Ash quest
 </li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--quests--2">
