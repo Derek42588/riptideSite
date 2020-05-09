@@ -8,7 +8,6 @@ import Setup from './components/Setup';
 import Wiki from './components/Wiki/Wiki';
 import Bugs from './components/Wiki/Articles/Bugs'
 
-import CustomContent from './components/CustomContent';
 
 function App() {
   return (

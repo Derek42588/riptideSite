@@ -10,8 +10,6 @@ import RiptideGem from './Articles/RiptideGem';
 import DarkIsle from './Articles/DarkIsle';
 import Bugs from './Articles/Bugs';
 
-import {Link} from 'react-router-dom'
-
 import NotFound from './Articles/NotFound';
 
 const Wiki = () => {
@@ -20,6 +18,16 @@ const Wiki = () => {
 
 
   const stubs = [
+    {
+        key: 'Stipends',
+        title: 'Stipend Changes',
+        summary:
+          'Stipend prices cut to 1, timer cut in half, Ring and Wall cert. combined, and XP cert. gives 5bill.  Otherwise works as retail',
+        thumbnail: 'stipendStub',
+        outsideFlag: "true",
+        link: "https://asheron.fandom.com/wiki/Stipends",
+        tags: 'bug bugs shadow slayer',
+      },
     {
         key: 'Bugs',
         title: 'Shadow Slayer Bug',

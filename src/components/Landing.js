@@ -5,39 +5,45 @@ import Easter from './Easter'
 import Fashion from './Fashion'
 import Cinco from './Cinco'
 
-import trinkets from '../img/changelogImages/trinkets.png'
+import stipendChangelog from '../img/changelogImages/stipendChangelog.png'
 
 const Landing = () => {
   return (
       <div className = "container">
         {Info()}
         <div className="changelog" id ="changelog">
-          <p className="changelog__title">Flagging Is For Nerds</p>
-          <p className="changelog__date">5/03/20</p>
+          <p className="changelog__title">Archers Are Hard To Please</p>
+          <p className="changelog__date">5/09/20</p>
 
-          <img src={trinkets} alt="Changelog - Trinkets" className="changelog__img"/>
+          <img src={stipendChangelog} alt="Changelog - Stpends" className="changelog__img"/>
           <div className="changelog__card">
           <ul className="changelog__text">
             <li className="changelog__item">
-              Void to War timer, 3-5s in between schools
+            Greater Primastic Darts and Quarrels should now work properly
             </li>
             <li className="changelog__item">
-            Trinkets have been added to loot. Imbues for those trinkets soon to come. Collect the salvage!
+            Focus Stone added to Dmitri
             </li>
             <li className="changelog__item">
-            Aetheria quest added. Aetheria will soon drop in loot.
+            Purified Mouryou Nekode added to Dalomar
             </li>
             <li className="changelog__item">
-            You no longer have to flag for Aug gem. Flag check removed on the Aug Realm portal.
+            Greater Deadly recipe fixes in Laurana
             </li>
             <li className="changelog__item">
-            Legendary Heartseeker now works correctly
+            Wooden Top added to Dalomar
             </li>
             <li className="changelog__item">
-            XP Modifier reduced to 2.0X.
+            /fixbusy added back in
             </li>
             <li className="changelog__item">
-            Void nerf turned down to 30% until Aetheria come out
+            Stipend Certificate prices dropped to 1
+            </li>
+            <li className="changelog__item">
+            Stipend Ring and Wall Certs combined
+            </li>
+            <li className="changelog__item">
+            Stipend timers cut in half
             </li>
           </ul>
           <a href = "/changelog">

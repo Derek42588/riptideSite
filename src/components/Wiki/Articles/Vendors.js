@@ -98,6 +98,7 @@ const Vendors = () => {
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Soul Bound Staff</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Rynthid Tentacle Wand</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Scribe's Quills</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Wooden Top</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Orb of the Ironsea</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Heart of Darkest Flame</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Holiday Present</li>
