@@ -5,6 +5,9 @@ import Landing from './components/Landing';
 import ChangelogList from './components/Changelog/ChangelogList';
 import Header from './components/Header';
 import Setup from './components/Setup';
+import Wiki from './components/Wiki/Wiki';
+import Bugs from './components/Wiki/Articles/Bugs'
+
 import CustomContent from './components/CustomContent';
 
 function App() {
@@ -14,8 +17,10 @@ function App() {
         <Header />
         <Route exact path = "/" component = {Landing} />
         <Route exact path = "/changelog" component = {ChangelogList} />
-        <Route exact path = "/customcontent" component = {CustomContent} />
+        <Route exact path = "/customcontent" component = {Wiki} />
         <Route exact path = "/setup" component = {Setup} />
+        <Route exact path = "/wiki" component = {Wiki} />
+        <Route exact path = "/bugs" component = {Bugs} />
       </div>
     </BrowserRouter>
     // <div className="App">

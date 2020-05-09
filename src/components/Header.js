@@ -27,7 +27,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav__item">
-            <Link to = "/customcontent" className = "nav__link">
+            <Link to = "/wiki" className = "nav__link">
                 Custom Content
               </Link>
             </li>

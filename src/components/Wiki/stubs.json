@@ -1,0 +1,9 @@
+{
+    "Professors": {
+        "title": "Spell Professors in Arwic",
+        "summary": "Spell professors in Arwic have been changed to cost only 1 pyreal per level.  Select them and then choose in the chat box to \"Tell to Professor of [x]\" with a message of \"Level X\" to learn that level of spells in that class.",
+        "thumbnail": "professorsStub",
+        "fullPageLink": "/wiki/professors",
+        "tags": "arwic professors spells research"
+    }
+}
