@@ -45,6 +45,15 @@ const Landing = () => {
             <li className="changelog__item">
             Stipend timers cut in half
             </li>
+            <li className="changelog__item">
+            The Stag of Bellenesse, The Dragon of Power, Karlun's Visage, Asheron's Jumpsuit, Empyrean Jumpsuit added to Dalomar
+            </li>
+            <li className="changelog__item">
+            Glyphs removed from Dmitri
+            </li>
+            <li className="changelog__item">
+            Gem of Knowledge increased to 10bill (1x) base
+            </li>
           </ul>
           <a href = "/changelog">
             <button className="btn">Past Updates</button>

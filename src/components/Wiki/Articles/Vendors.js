@@ -109,6 +109,12 @@ const Vendors = () => {
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Enhanced Eye of the Quiddity</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Impious Staff</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">All Dyes for 1 trophy</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">The Stag of Bellenesse</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">The Dragon of Power</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Karlun's Visage</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Asheron's Jumpsuit</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Empyrean Jumpsuit</li>
+    {/* The Stag of Bellenesse, The Dragon of Power, Karlun's Visage, Asheron's Jumpsuit, Empyrean Jumpsuit */}
 </ul>
 
 <img src={laurana} alt="Laurana" className="wiki__content-box__article__side-img wiki__content-box__article--vendors__side-img--laurana"/>
