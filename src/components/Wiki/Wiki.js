@@ -41,10 +41,19 @@ const Wiki = () => {
         key: 'Bugs',
         title: 'Quest Timer Bug',
         summary:
-          'Quest Timers currently off, will be fixed next reset',
+          'Quest Timers currently off.  **Fixed with 5/9/20 reset**',
         thumbnail: 'bugStub',
         outsideFlag: "false",  
         tags: 'bug bugs quest timer',
+      },
+    {
+        key: 'Bugs',
+        title: 'Aun Ralirea Bug',
+        summary:
+          'Aun Ralirea currently only respawns after server resets.',
+        thumbnail: 'bugStub',
+        outsideFlag: "false",  
+        tags: 'bug bugs ralirea skill credit aun',
       },
     {
       key: 'Riptide Gem',
@@ -314,10 +323,19 @@ const Wiki = () => {
         key: 'Bugs',
         title: 'Quest Timer Bug',
         summary:
-          'Quest Timers currently off, will be fixed next reset',
+          'Quest Timers currently off.  **Fixed with 5/9/20 reset**',
         thumbnail: 'bugStub',
         outsideFlag: "false",  
         tags: 'bug bugs quest timer',
+      },
+      {
+        key: 'Bugs',
+        title: 'Aun Ralirea Bug',
+        summary:
+          'Aun Ralirea currently only respawns after server resets.',
+        thumbnail: 'bugStub',
+        outsideFlag: "false",  
+        tags: 'bug bugs ralirea skill credit aun',
       },
     {
         key: 'Bugs',
