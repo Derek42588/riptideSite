@@ -312,6 +312,24 @@ const Wiki = () => {
   const bugsStubs = [
     {
         key: 'Bugs',
+        title: 'Corpse Permit Bug',
+        summary:
+          'Corpse permit currently bugged/not working properly',
+        thumbnail: 'bugStub',
+        outsideFlag: "false",  
+        tags: 'bug bugs corpse permit',
+      },
+    {
+        key: 'Bugs',
+        title: 'PK Timer Bug',
+        summary:
+          'PK Logout Timer on PK tag currently bugged',
+        thumbnail: 'bugStub',
+        outsideFlag: "false",  
+        tags: 'bug bugs tag pk timer',
+      },
+    {
+        key: 'Bugs',
         title: 'Shadow Slayer Bug',
         summary:
           'Shadow Slayer quest line currently broken',
