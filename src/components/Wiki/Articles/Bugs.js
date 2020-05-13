@@ -10,6 +10,7 @@ const bugs = () => {
             <img src={bugsSide} alt="Bugs" className="wiki__content-box__article__side-img"/>
             <div className="wiki__content-box__article__info">
             <ul className="wiki__content-box__article__info__list wiki__content-box__article__info__list--bugs">
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Font of Joji use flag not working properly</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Corpse permit currently bugged/not working properly</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">PK Logout Timer on PK tag currently bugged</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Shadow Slayer quest line currently broken**Fixed with 5/9/20 reset**</li>

@@ -19,6 +19,43 @@ const Wiki = () => {
 
   const stubs = [
     {
+      key: 'Undead Slayer',
+      title: 'Undead Slayer Quest',
+      summary:
+        'Undead Slayer quest now in game, working as retail',
+      thumbnail: 'undeadSlayerStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Lunnum%27s_Return",
+      tags: 'bug bugs font joji',
+    },
+    {
+      key: 'Bugs',
+      title: 'Joji Bug',
+      summary:
+        'Font of Joji use flag not working properly',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs font joji',
+    },
+    {
+      key: 'Bugs',
+      title: 'Corpse Permit Bug',
+      summary:
+        'Corpse permit currently bugged/not working properly',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs corpse permit',
+    },
+  {
+      key: 'Bugs',
+      title: 'PK Timer Bug',
+      summary:
+        'PK Logout Timer on PK tag currently bugged',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs tag pk timer',
+    },
+    {
         key: 'Stipends',
         title: 'Stipend Changes',
         summary:
@@ -207,6 +244,16 @@ const Wiki = () => {
   ];
 
   const questStubs = [
+    {
+      key: 'Undead Slayer',
+      title: 'Undead Slayer Quest',
+      summary:
+        'Undead Slayer quest now in game, working as retail',
+      thumbnail: 'undeadSlayerStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Lunnum%27s_Return",
+      tags: 'bug bugs font joji',
+    },
       {
     key: 'Riptide Gem',
     title: 'Riptide Gem of Knowledge',
@@ -310,6 +357,15 @@ const Wiki = () => {
       },
   ]
   const bugsStubs = [
+    {
+      key: 'Bugs',
+      title: 'Joji Bug',
+      summary:
+        'Font of Joji use flag not working properly',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs font joji',
+    },
     {
         key: 'Bugs',
         title: 'Corpse Permit Bug',

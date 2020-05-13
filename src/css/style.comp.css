@@ -1270,3 +1270,6 @@ body {
     color: #bb271f; }
   .header-medium--white {
     color: #fff; }
+
+.bold {
+  font-weight: bold; }

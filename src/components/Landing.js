@@ -5,54 +5,27 @@ import Easter from './Easter'
 import Fashion from './Fashion'
 import Cinco from './Cinco'
 
-import stipendChangelog from '../img/changelogImages/stipendChangelog.png'
+import undeadChangelog from '../img/changelogImages/undeadChangelog.png'
 
 const Landing = () => {
   return (
       <div className = "container">
         {Info()}
         <div className="changelog" id ="changelog">
-          <p className="changelog__title">Archers Are Hard To Please</p>
-          <p className="changelog__date">5/09/20</p>
+          <p className="changelog__title">Call Me Bruce Campbell Cuz I'm An...</p>
+          <p className="changelog__date">5/13/20</p>
 
-          <img src={stipendChangelog} alt="Changelog - Stpends" className="changelog__img"/>
+          <img src={undeadChangelog} alt="Changelog - Undead Slayer" className="changelog__img"/>
           <div className="changelog__card">
           <ul className="changelog__text">
             <li className="changelog__item">
-            Greater Primastic Darts and Quarrels should now work properly
+            Undead Slayer now in game, working as retail
             </li>
             <li className="changelog__item">
-            Focus Stone added to Dmitri
+            Void wands in loot -- for realsies
             </li>
             <li className="changelog__item">
-            Purified Mouryou Nekode added to Dalomar
-            </li>
-            <li className="changelog__item">
-            Greater Deadly recipe fixes in Laurana
-            </li>
-            <li className="changelog__item">
-            Wooden Top added to Dalomar
-            </li>
-            <li className="changelog__item">
-            /fixbusy added back in
-            </li>
-            <li className="changelog__item">
-            Stipend Certificate prices dropped to 1
-            </li>
-            <li className="changelog__item">
-            Stipend Ring and Wall Certs combined
-            </li>
-            <li className="changelog__item">
-            Stipend timers cut in half
-            </li>
-            <li className="changelog__item">
-            The Stag of Bellenesse, The Dragon of Power, Karlun's Visage, Asheron's Jumpsuit, Empyrean Jumpsuit added to Dalomar
-            </li>
-            <li className="changelog__item">
-            Glyphs removed from Dmitri
-            </li>
-            <li className="changelog__item">
-            Gem of Knowledge increased to 10bill (1x) base
+            Void -> War Timer working -- for realsies
             </li>
           </ul>
           <a href = "/changelog">

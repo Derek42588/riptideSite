@@ -7,21 +7,49 @@ import ruschk from '../../img/changelogImages/ruschk.png'
 
 import stipends from '../../img/changelogImages/43020.png'
 import trinkets from '../../img/changelogImages/trinkets.png'
+import stipendChangelog from '../../img/changelogImages/stipendChangelog.png'
+
 
 
 const ChangelogList = () => {
   return (
     <div className="changelogList">
       <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">Flagging Is For Nerds</p>
-        <p className="changelogList__item__date">5/03/20</p>
+        <p className="changelogList__item__title">Archers Are Hard To Please</p>
+        <p className="changelogList__item__date">5/09/20</p>
+
+        <img
+          src={stipendChangelog}
+          alt="Changelog - Stipend Timers"
+          className="changelogList__item__img"
+        />
+        <div className="changelogList__item__card">
+          <ul className="changelogList__item__text">
+            <li className="changelogList__item__item">Greater Primastic Darts and Quarrels should now work properly</li>
+            <li className="changelogList__item__item">Focus Stone added to Dmitri</li>
+            <li className="changelogList__item__item">Purified Mouryou Nekode added to Dalomar</li>
+            <li className="changelogList__item__item">Greater Deadly recipe fixes in Laurana</li>
+            <li className="changelogList__item__item">Wooden Top added to Dalomar</li>
+            <li className="changelogList__item__item">/fixbusy added back in</li>
+            <li className="changelogList__item__item">Stipend Certificate prices dropped to 1</li>
+            <li className="changelogList__item__item">Stipend Ring and Wall Certs combined</li>
+            <li className="changelogList__item__item">Stipend timers cut in half</li>
+            <li className="changelogList__item__item">The Stag of Bellenesse, The Dragon of Power, Karlun's Visage, Asheron's Jumpsuit, Empyrean Jumpsuit added to Dalomar</li>
+            <li className="changelogList__item__item">Glyphs removed from Dmitri</li>
+            <li className="changelogList__item__item">Gem of Knowledge increased to 10bill (1x) base</li>
+          </ul>
+        </div>
+      </div>  
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">Flagging Is For Nerds</p>
+        <p className="changelogList__item__date changelogList__item__date--left">5/03/20</p>
 
         <img
           src={trinkets}
           alt="Changelog - Trinkets"
-          className="changelogList__item__img"
+          className="changelogList__item__img changelogList__item__img--right"
         />
-        <div className="changelogList__item__card">
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">Void to War timer, 3-5s in between schools</li>
             <li className="changelogList__item__item">Trinkets have been added to loot. Imbues for those trinkets soon to come. Collect the salvage!</li>
@@ -32,18 +60,17 @@ const ChangelogList = () => {
             <li className="changelogList__item__item">Void nerf turned down to 30% until Aetheria come out</li>
           </ul>
         </div>
-      </div>
-      
-      <div className="changelogList__item">
-        <p className="changelogList__item__title changelogList__item__title--right">Stipends, Hero Tokens</p>
-        <p className="changelogList__item__date changelogList__item__date--left">4/30/20</p>
+      </div>    
+      <div className="changelogList__item changelogList__item--left">
+        <p className="changelogList__item__title">Stipends, Hero Tokens</p>
+        <p className="changelogList__item__date">4/30/20</p>
 
         <img
           src={stipends}
           alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img changelogList__item__img--right"
+          className="changelogList__item__img"
         />
-        <div className="changelogList__item__card changelogList__item__card--left">
+        <div className="changelogList__item__card">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">Arcane augmentation vendor fixed</li>
             <li className="changelogList__item__item">Laurana fixes</li>
@@ -68,16 +95,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">New Augmentation and More</p>
-        <p className="changelogList__item__date">4/24/20</p>
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">New Augmentation and More</p>
+        <p className="changelogList__item__date changelogList__item__date--left">4/24/20</p>
 
         <img
           src={riptideGem}
           alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img"
+          className="changelogList__item__img changelogList__item__img--right"
         />
-        <div className="changelogList__item__card">
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">
               Garbled player names when a player loses their killing spree fixed
@@ -109,16 +136,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item">
-        <p className="changelogList__item__title changelogList__item__title--right">Big Ass Packs, Son</p>
-        <p className="changelogList__item__date changelogList__item__date--left">4/20/20</p>
+      <div className="changelogList__item changelogList__item--left">
+        <p className="changelogList__item__title">Big Ass Packs, Son</p>
+        <p className="changelogList__item__date">4/20/20</p>
 
         <img
           src={backpacks}
           alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img changelogList__item__img--right"
+          className="changelogList__item__img"
         />
-        <div className="changelogList__item__card changelogList__item__card--left">
+        <div className="changelogList__item__card">
           <ul className="changelogList__item__text">
             
             <li className="changelogList__item__item">
@@ -142,16 +169,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">EggTide and Shadow Slayer</p>
-        <p className="changelogList__item__date">4/18/20</p>
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">EggTide and Shadow Slayer</p>
+        <p className="changelogList__item__date changelogList__item__date--left">4/18/20</p>
 
         <img
           src={shadowSlayer}
           alt="Shadow Slayer"
-          className="changelogList__item__img"
+          className="changelogList__item__img changelogList__item__img--right"
         />
-        <div className="changelogList__item__card">
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">
             DI mobs have been overcome with a sense of Easter</li>
@@ -169,16 +196,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item">
-        <p className="changelogList__item__title changelogList__item__title--right">Tag, You're It</p>
-        <p className="changelogList__item__date changelogList__item__date--left">4/07/20</p>
+      <div className="changelogList__item changelogList__item--left">
+        <p className="changelogList__item__title">Tag, You're It</p>
+        <p className="changelogList__item__date">4/07/20</p>
 
         <img
           src={ruschk}
           alt="Ruschk"
-          className="changelogList__item__img changelogList__item__img--right"
+          className="changelogList__item__img"
         />
-        <div className="changelogList__item__card changelogList__item__card--left">
+        <div className="changelogList__item__card">
           <ul className="changelogList__item__text">
             
             <li className="changelogList__item__item">
@@ -203,16 +230,16 @@ const ChangelogList = () => {
           </ul>
         </div>
       </div>
-      <div className="changelogList__item changelogList__item--left">
-        <p className="changelogList__item__title">Dark Isle Baby!</p>
-        <p className="changelogList__item__date">4/01/20</p>
+      <div className="changelogList__item">
+        <p className="changelogList__item__title changelogList__item__title--right">Dark Isle Baby!</p>
+        <p className="changelogList__item__date changelogList__item__date--left">4/01/20</p>
 
         <img
           src={darkIsle}
           alt="Riptide Gem of Knowledge"
-          className="changelogList__item__img"
+          className="changelogList__item__img changelogList__item__img--right"
         />
-        <div className="changelogList__item__card">
+        <div className="changelogList__item__card changelogList__item__card--left">
           <ul className="changelogList__item__text">
             <li className="changelogList__item__item">
             Dark Isle release v1.0
