@@ -27,6 +27,12 @@ const Landing = () => {
             <li className="changelog__item">
             Void -> War Timer working -- for realsies
             </li>
+            <li className="changelog__item">
+            Olthoi Armor added to loot
+            </li>
+            <li className="changelog__item">
+            Haebrean Armor added to loot
+            </li>
           </ul>
           <a href = "/changelog">
             <button className="btn">Past Updates</button>

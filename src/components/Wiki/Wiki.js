@@ -359,6 +359,15 @@ const Wiki = () => {
   const bugsStubs = [
     {
       key: 'Bugs',
+      title: 'Pathwarden Bug',
+      summary:
+        'Pathwarden NPCs currently broken -- will be fixed next restart',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs font joji',
+    },
+    {
+      key: 'Bugs',
       title: 'Joji Bug',
       summary:
         'Font of Joji use flag not working properly',
