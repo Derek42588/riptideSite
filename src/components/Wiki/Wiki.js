@@ -19,6 +19,16 @@ const Wiki = () => {
 
   const stubs = [
     {
+
+      key: 'Bugs',
+      title: 'Black Skull',
+      summary:
+        'Black Skull of Xikma not properly applying Undead Slayer, quest otherwise working',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs font joji',
+    },
+    {
       key: 'Undead Slayer',
       title: 'Undead Slayer Quest',
       summary:
@@ -358,10 +368,11 @@ const Wiki = () => {
   ]
   const bugsStubs = [
     {
+
       key: 'Bugs',
-      title: 'Pathwarden Bug',
+      title: 'Black Skull',
       summary:
-        'Pathwarden NPCs currently broken -- will be fixed next restart',
+        'Black Skull of Xikma not properly applying Undead Slayer, quest otherwise working',
       thumbnail: 'bugStub',
       outsideFlag: "false",  
       tags: 'bug bugs font joji',
