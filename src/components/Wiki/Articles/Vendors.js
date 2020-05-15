@@ -27,6 +27,7 @@ const Vendors = () => {
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article--vendors__info__list__item--bold wiki__content-box__article__info__list__item--pka--1">Daniel - Sells PK Trophies for MMDs</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article--vendors__info__list__item--bold wiki__content-box__article__info__list__item--pka--2">Dmitri:</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--3">All Ring and Wall Spells for 15 trophies</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--3">Fetish of the Dark Idol for 30 trophies</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--3">48 Slot Pack for 10</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--3">64 Slot Pack for 25</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--4">Burning Coal for 3</li>

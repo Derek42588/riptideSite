@@ -5,33 +5,51 @@ import Easter from './Easter'
 import Fashion from './Fashion'
 import Cinco from './Cinco'
 
-import undeadChangelog from '../img/changelogImages/undeadChangelog.png'
+import candethChangelog from '../img/changelogImages/candethChangelog.jpg'
 
 const Landing = () => {
   return (
       <div className = "container">
         {Info()}
         <div className="changelog" id ="changelog">
-          <p className="changelog__title">Call Me Bruce Campbell Cuz I'm An...</p>
-          <p className="changelog__date">5/13/20</p>
+          <p className="changelog__title">Total Recall</p>
+          <p className="changelog__date">5/15/20</p>
 
-          <img src={undeadChangelog} alt="Changelog - Undead Slayer" className="changelog__img"/>
+          <img src={candethChangelog} alt="Changelog - Recall Spells" className="changelog__img"/>
           <div className="changelog__card">
           <ul className="changelog__text">
             <li className="changelog__item">
-            Undead Slayer now in game, working as retail
+            GW Invaders (Recall Quest) in game, working as retail
             </li>
             <li className="changelog__item">
-            Void wands in loot -- for realsies
+            Fetish of the Dark Idols added to Dmitri for 30 trophies
             </li>
             <li className="changelog__item">
-            Void -> War Timer working -- for realsies
+            Stipends changed to Stimulus Checks
             </li>
             <li className="changelog__item">
-            Olthoi Armor added to loot
+            Candeth Keep Recall quest added
             </li>
             <li className="changelog__item">
-            Haebrean Armor added to loot
+            Knorr armor added to loot table
+            </li>
+            <li className="changelog__item">
+            Olthoi Celdon now dying properly
+            </li>
+            <li className="changelog__item">
+            Recipes for Shadow, Seasoned Explorer, and Undead slayer bugged.  Being worked on now
+            </li>
+            <li className="changelog__item">
+            Misc crashes fixed. Including, but not limited to:
+            </li>
+            <li className="changelog__item">
+            First tink on items
+            </li>
+            <li className="changelog__item">
+            Bobo (generator monster kills)
+            </li>
+            <li className="changelog__item">
+            Green Garnet tinking
             </li>
           </ul>
           <a href = "/changelog">

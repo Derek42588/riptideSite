@@ -7,6 +7,7 @@ import Qol from './Articles/Qol';
 import Vendors from './Articles/Vendors';
 import Quests from './Articles/Quests';
 import RiptideGem from './Articles/RiptideGem';
+import CandethKeep from './Articles/CandethKeep';
 import DarkIsle from './Articles/DarkIsle';
 import Bugs from './Articles/Bugs';
 
@@ -19,11 +20,30 @@ const Wiki = () => {
 
   const stubs = [
     {
+      key: 'GW Recall',
+      title: 'GW Recall Quest',
+      summary:
+        'Glenden Wood Recall Quest now in game.  Works as retail',
+      thumbnail: 'gwRecallStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Glenden_Wood_Invaders",
+      tags: 'quest quests glenden wood gw recall',
+    },
+    {
+      key: 'Candeth Recall',
+      title: 'Candeth Keep Recall Quest',
+      summary:
+        'Candeth Keep Recall Quest now in game.  See changes to retail in full article',
+      thumbnail: 'candethRecallStub',
+      outsideFlag: "false",  
+      tags: 'quest quests candeth keep recall',
+    },
+    {
 
       key: 'Bugs',
-      title: 'Black Skull',
+      title: 'Recipes Bug',
       summary:
-        'Black Skull of Xikma not properly applying Undead Slayer, quest otherwise working',
+        'Recipes for Shadow, Seasoned Explorer, and Undead slayer bugged.  Being worked on now.',
       thumbnail: 'bugStub',
       outsideFlag: "false",  
       tags: 'bug bugs font joji',
@@ -36,7 +56,7 @@ const Wiki = () => {
       thumbnail: 'undeadSlayerStub',
       outsideFlag: "true",  
       link: "https://asheron.fandom.com/wiki/Lunnum%27s_Return",
-      tags: 'bug bugs font joji',
+      tags: 'quests quest undead slayer xikma skull',
     },
     {
       key: 'Bugs',
@@ -255,6 +275,25 @@ const Wiki = () => {
 
   const questStubs = [
     {
+      key: 'GW Recall',
+      title: 'GW Recall Quest',
+      summary:
+        'Glenden Wood Recall Quest now in game.  Works as retail',
+      thumbnail: 'gwRecallStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Glenden_Wood_Invaders",
+      tags: 'quest quests glenden wood gw recall',
+    },
+    {
+      key: 'Candeth Recall',
+      title: 'Candeth Keep Recall Quest',
+      summary:
+        'Candeth Keep Recall Quest now in game.  See changes to retail in full article',
+      thumbnail: 'candethRecallStub',
+      outsideFlag: "false",  
+      tags: 'quest quests candeth keep gw recall',
+    },
+    {
       key: 'Undead Slayer',
       title: 'Undead Slayer Quest',
       summary:
@@ -370,9 +409,9 @@ const Wiki = () => {
     {
 
       key: 'Bugs',
-      title: 'Black Skull',
+      title: 'Recipes Bug',
       summary:
-        'Black Skull of Xikma not properly applying Undead Slayer, quest otherwise working',
+        'Recipes for Shadow, Seasoned Explorer, and Undead slayer bugged.  Being worked on now.',
       thumbnail: 'bugStub',
       outsideFlag: "false",  
       tags: 'bug bugs font joji',
@@ -530,6 +569,13 @@ const Wiki = () => {
         return (
           <div className="wiki__content-box">
             <RiptideGem />
+          </div>
+        );
+      }
+      else if (view === 'Candeth Recall') {
+        return (
+          <div className="wiki__content-box">
+            <CandethKeep />
           </div>
         );
       }
