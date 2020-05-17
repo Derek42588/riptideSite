@@ -20,6 +20,15 @@ const Wiki = () => {
 
   const stubs = [
     {
+      key: 'Tier 7',
+      title: 'Tier 7 Changes',
+      summary:
+        'EO, POTB, FC, 120 Hive, FT, DD and CC mobs now drop MMDs and epic tier loot',
+      thumbnail: 'qolStub',
+      outsideFlag: "false",  
+      tags: 'eo potb fc chasm forgotten egg orchard path blind hive feeding tubes dark desing creepy canyon cc mmd qol quality life',
+    },
+    {
       key: 'GW Recall',
       title: 'GW Recall Quest',
       summary:
@@ -404,6 +413,15 @@ const Wiki = () => {
         outsideFlag: "false",  
         tags: 'qol quality chorizite aug bellas resets castle asheron coals tailor tailoring rare rares scint scintillating scints massives death items',
       },
+      {
+        key: 'QoL',
+        title: 'Tier 7 Changes',
+        summary:
+          'EO, POTB, FC, 120 Hive, FT, DD and CC mobs now drop MMDs and epic tier loot',
+        thumbnail: 'qolStub',
+        outsideFlag: "false",  
+        tags: 'eo potb fc chasm forgotten egg orchard path blind hive feeding tubes dark desing creepy canyon cc mmd qol quality life',
+      }
   ]
   const bugsStubs = [
     {
@@ -551,7 +569,7 @@ const Wiki = () => {
           </div>
         );
       }
-      else if (view === 'QoL') {
+      else if (view === 'QoL' || view === 'Tier 7') {
         return (
           <div className="wiki__content-box">
             <Qol />

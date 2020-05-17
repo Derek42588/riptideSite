@@ -5,52 +5,47 @@ import Easter from './Easter'
 import Fashion from './Fashion'
 import Cinco from './Cinco'
 
-import candethChangelog from '../img/changelogImages/candethChangelog.jpg'
+import mmdChangelog from '../img/changelogImages/mmdChangelog.jpg'
 
 const Landing = () => {
   return (
       <div className = "container">
         {Info()}
         <div className="changelog" id ="changelog">
-          <p className="changelog__title">Total Recall</p>
-          <p className="changelog__date">5/15/20</p>
+          <p className="changelog__title">MMDeez Nuts</p>
+          <p className="changelog__date">5/17/20</p>
 
-          <img src={candethChangelog} alt="Changelog - Recall Spells" className="changelog__img"/>
+          <img src={mmdChangelog} alt="Changelog - MMD" className="changelog__img"/>
           <div className="changelog__card">
           <ul className="changelog__text">
             <li className="changelog__item">
-            GW Invaders (Recall Quest) in game, working as retail
+            Funky vendor issue with new release fixed.
             </li>
             <li className="changelog__item">
-            Fetish of the Dark Idols added to Dmitri for 30 trophies
+            DI mobs will now spawn correctly. The spawns will start off in groups of 5 normal mobs. Killing the normal mobs will trigger the Boss mob to spawn.
             </li>
             <li className="changelog__item">
-            Stipends changed to Stimulus Checks
+            Golems have finally made their way out to DI as well
             </li>
             <li className="changelog__item">
-            Candeth Keep Recall quest added
+            Curse of Ravens Fury ring range has been modified. It should hit closer targets now. *fingers crossed*
             </li>
             <li className="changelog__item">
-            Knorr armor added to loot table
+            Feeding Tubes and Forgotten Chasm mobs now drop epic loot
             </li>
             <li className="changelog__item">
-            Olthoi Celdon now dying properly
+            Mosswart Agitator now drops Armband
             </li>
             <li className="changelog__item">
-            Recipes for Shadow, Seasoned Explorer, and Undead slayer bugged.  Being worked on now
+            Egg Orchard, Path of the Blind, Forgotten Chasm, Matron Hive East, Feeding Tubes, Dark Design, and Creepy Canyons mobs now have a chance to drop 1 MMD note
             </li>
             <li className="changelog__item">
-            Misc crashes fixed. Including, but not limited to:
+            Sanamar Collector accepts all the ninja dungeon mob trophies as shareable XP
             </li>
             <li className="changelog__item">
-            First tink on items
+            All other world collectors accept the above trophies as shareable XP
             </li>
-            <li className="changelog__item">
-            Bobo (generator monster kills)
-            </li>
-            <li className="changelog__item">
-            Green Garnet tinking
-            </li>
+
           </ul>
           <a href = "/changelog">
             <button className="btn">Past Updates</button>

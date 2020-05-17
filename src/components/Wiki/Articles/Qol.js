@@ -10,6 +10,8 @@ const Qol = () => {
             <img src={qolSideImg} alt="Professor of Creature Magic" className="wiki__content-box__article__side-img"/>
             <div className="wiki__content-box__article__info">
             <ul className="wiki__content-box__article__info__list wiki__content-box__article__info__list--qol">
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--qol--1">EO, POTB, FC, 120 Hive, FT, DD and CC mobs now drop MMDs and epic tier loot
+</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--qol--1">No timer on Chorizite</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--qol--2">
                 20 hour aug gem</li>
