@@ -2,6 +2,8 @@ import React from 'react';
 import './css/style.css';
 import {BrowserRouter, Route } from 'react-router-dom';
 import Landing from './components/Landing';
+import Elo from './components/Elo';
+import ViewPlayer from './components/ViewPlayer';
 import ChangelogList from './components/Changelog/ChangelogList';
 import Header from './components/Header';
 import Setup from './components/Setup';
@@ -15,6 +17,8 @@ function App() {
       <div className = "fullApp">
         <Header />
         <Route exact path = "/" component = {Landing} />
+        <Route exact path = "/elo" component = {Elo} />
+        <Route exact path = "/elo/:id" component = {ViewPlayer} />
         <Route exact path = "/changelog" component = {ChangelogList} />
         <Route exact path = "/customcontent" component = {Wiki} />
         <Route exact path = "/setup" component = {Setup} />

@@ -12,6 +12,11 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav__item">
+            <Link to = "/elo" className = "nav__link">
+                ELO
+              </Link>
+            </li>
+            <li className="nav__item">
               <a href="https://discordapp.com/invite/fKR3m74" className="nav__link">
                 Discord
               </a>
