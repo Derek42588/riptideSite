@@ -13,12 +13,25 @@ import Bugs from './Articles/Bugs';
 
 import NotFound from './Articles/NotFound';
 
-const Wiki = () => {
-  const [view, setView] = useState('');
-  const [filter, setFilter] = useState('');
+const Wiki = (props) => {
+
+  
+
+  const [view, setView] = useState(props.location.search.split('?').join('').split('_').join(' ').split('%20').join(' ')  );
+  const [filter, setFilter] = useState(props.location.search.split('?').join('').split('_').join(' ').split('%20').join(' '))
 
 
   const stubs = [
+    {
+      key: 'Society Stamps',
+      title: 'Society Stamps',
+      summary:
+        'For Society Stamps quest, the stamps are not in the chests at the end/as written on ACWiki, they are on the ground at start of the dungeon.  Otherwise work as retail',
+      thumbnail: 'societyStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Exploration_Society_Letters",
+      tags: 'quest quests society stamps explorer',
+    },
     {
       key: 'Tier 7',
       title: 'Tier 7 Changes',
@@ -102,7 +115,7 @@ const Wiki = () => {
         thumbnail: 'stipendStub',
         outsideFlag: "true",
         link: "https://asheron.fandom.com/wiki/Stipends",
-        tags: 'bug bugs shadow slayer',
+        tags: 'stipend stipends',
       },
     {
         key: 'Bugs',
@@ -292,6 +305,16 @@ const Wiki = () => {
       outsideFlag: "true",  
       link: "https://asheron.fandom.com/wiki/Glenden_Wood_Invaders",
       tags: 'quest quests glenden wood gw recall',
+    },
+    {
+      key: 'Society Stamps',
+      title: 'Society Stamps',
+      summary:
+        'For Society Stamps quest, the stamps are not in the chests at the end/as written on ACWiki, they are on the ground at start of the dungeon.  Otherwise work as retail',
+      thumbnail: 'societyStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Exploration_Society_Letters",
+      tags: 'quest quests society stamps explorer',
     },
     {
       key: 'Candeth Recall',

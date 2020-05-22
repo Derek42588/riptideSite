@@ -16,49 +16,13 @@ function App() {
         <Header />
         <Route exact path = "/" component = {Landing} />
         <Route exact path = "/changelog" component = {ChangelogList} />
-        <Route exact path = "/customcontent" component = {Wiki} />
+        <Route path = "/customcontent" component = {Wiki} />
         <Route exact path = "/setup" component = {Setup} />
-        <Route exact path = "/wiki" component = {Wiki} />
+        <Route path = "/wiki" component = {Wiki} />
         <Route exact path = "/bugs" component = {Bugs} />
       </div>
     </BrowserRouter>
-    // <div className="App">
-    //   <div className="container">
-        // <header className="header">
-        //   <ul className="nav">
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Links
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Setup
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Changelog
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Known Bugs
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Custom Content
-        //       </a>
-        //     </li>
-        //   </ul>
-        // </header>
-    //     {Info()}
-    //     {Changelog()}
-    //     <div className="gallery">Gallery</div>
-    //     <footer className="footer">Footer</footer>
-    //   </div>
-    // </div>
+
   );
 }
 
