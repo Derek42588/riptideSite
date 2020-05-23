@@ -50,6 +50,11 @@ padding: 1rem;
   @include respond(micro) {
     margin: 0 4rem;
   }
+
+  &--110 {
+    background-image: linear-gradient(rgba($color-white, .15), rgba($color-primary-dark, .65)), url(../img/eatersTournament.PNG);
+
+  }
    
   }
 
@@ -340,4 +345,10 @@ padding: 1rem;
     display: flex;
     flex-flow: column;
   }
+}
+
+.past-tournaments-button {
+  margin: 3rem 0;
+  justify-self: center;
+  grid-column: 1/ -1;
 }

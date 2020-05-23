@@ -329,6 +329,8 @@
     @media only screen and (max-width: 31.25em) {
       .tournament__title-card {
         margin: 0 4rem; } }
+    .tournament__title-card--110 {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(187, 39, 31, 0.65)), url(../img/eatersTournament.PNG); }
   .tournament__title {
     text-align: center;
     grid-column: 1 / -1;
@@ -507,6 +509,11 @@
   .tournament .column-name {
     display: flex;
     flex-flow: column; }
+
+.past-tournaments-button {
+  margin: 3rem 0;
+  justify-self: center;
+  grid-column: 1/ -1; }
 
 .easter {
   background-image: linear-gradient(rgba(187, 39, 31, 0.77), rgba(255, 255, 255, 0.75));

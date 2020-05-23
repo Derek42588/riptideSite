@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Setup from './components/Setup';
 import Wiki from './components/Wiki/Wiki';
 import Bugs from './components/Wiki/Articles/Bugs'
+import Tournaments from './components/Tournaments'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route exact path = "/setup" component = {Setup} />
         <Route path = "/wiki" component = {Wiki} />
         <Route exact path = "/bugs" component = {Bugs} />
+        <Route exact path = "/tournaments" component = {Tournaments} />
       </div>
     </BrowserRouter>
 
