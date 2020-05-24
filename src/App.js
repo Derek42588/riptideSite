@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import ChangelogList from './components/Changelog/ChangelogList';
 import Header from './components/Header';
 import Setup from './components/Setup';
+import Utilities from './components/Utilities';
 import Wiki from './components/Wiki/Wiki';
 import Bugs from './components/Wiki/Articles/Bugs'
 import Tournaments from './components/Tournaments'
@@ -34,6 +35,7 @@ function App() {
         <Route exact path = '/changelog' render = {() => <ChangelogList shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
         {/* <Route exact path = '/customcontent' render = {(props) => <Wiki shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} /> */}
         <Route exact path = '/setup' render = {() => <Setup shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
+        <Route exact path = '/utilities' render = {() => <Utilities shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
         {/* <Route exact path = '/wiki' render = {(props) => <Wiki shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} /> */}
         <Route exact path = '/bugs' render = {() => <Bugs shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
         <Route exact path = '/tournaments' render = {() => <Tournaments shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} /
