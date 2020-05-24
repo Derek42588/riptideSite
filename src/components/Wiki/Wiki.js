@@ -7,6 +7,7 @@ import Qol from './Articles/Qol';
 import Vendors from './Articles/Vendors';
 import Quests from './Articles/Quests';
 import RiptideGem from './Articles/RiptideGem';
+import Infinite from './Articles/Infinite';
 import CandethKeep from './Articles/CandethKeep';
 import DarkIsle from './Articles/DarkIsle';
 import Bugs from './Articles/Bugs';
@@ -22,6 +23,15 @@ const Wiki = (props) => {
 
 
   const stubs = [
+    {
+      key: 'Infinite Mana Stone',
+      title: 'Infiite Mana Stone',
+      summary:
+        'Custom quest for an infinite mana stone',
+      thumbnail: 'infiniteStub',
+      outsideFlag: "false",  
+      tags: 'quest quests infinite mana stone',
+    },
     {
       key: 'Society Stamps',
       title: 'Society Stamps',
@@ -296,6 +306,15 @@ const Wiki = (props) => {
   ];
 
   const questStubs = [
+    {
+      key: 'Infinite Mana Stone',
+      title: 'Infiite Mana Stone',
+      summary:
+        'Custom quest for an infinite mana stone',
+      thumbnail: 'infiniteStub',
+      outsideFlag: "false",  
+      tags: 'quest quests infinite mana stone',
+    },
     {
       key: 'GW Recall',
       title: 'GW Recall Quest',
@@ -589,6 +608,13 @@ const Wiki = (props) => {
         return (
           <div className="wiki__content-box">
             <Pvp />
+          </div>
+        );
+      }
+      else if (view === 'Infinite Mana Stone') {
+        return (
+          <div className="wiki__content-box">
+            <Infinite />
           </div>
         );
       }
