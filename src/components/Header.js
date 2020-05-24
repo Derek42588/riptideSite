@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 
-const Header = () => {
+const Header = ({toggleShelf}) => {
   return (
     <header className="header">
           <ul className="nav">
-            <li className="nav__item">
-            <Link to = "/" className = "nav__link">
-                Home
+            <li className="nav__item"  onClick={() => toggleShelf()} >
+            <Link to = "#" className = "nav__link">
+                Menu
               </Link>
             </li>
             <li className="nav__item">
@@ -28,7 +28,7 @@ const Header = () => {
             </li>
             <li className="nav__item">
             <Link to = "/wiki" className = "nav__link">
-                Custom Content
+                Wiki
               </Link>
             </li>
           </ul> 
