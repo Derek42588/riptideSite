@@ -33,6 +33,46 @@ const Wiki = (props) => {
       tags: 'quest quests infinite mana stone',
     },
     {
+
+      key: 'Bugs',
+      title: 'Dye Bug',
+      summary:
+        'Dyes are not changing the color of the dyed item icon or being used up',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs dyes',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Chalk Board Bug',
+      summary:
+        'Chalk Board is currently not working',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs chalk board',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Foc Stone Bug',
+      summary:
+        'For the first part of Focusing Stone, the Lesser Acolyte at the end (lowest tower) is just named Lich.  Otherwise works as retail',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs focusing stone',
+    },  
+    {
+
+      key: 'Bugs',
+      title: 'Recipes Bug',
+      summary:
+        'Recipes (undead slayer, shadow slayer, society armor and more) are causing issues.',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs focusing stone',
+    },
+    {
       key: 'Society Stamps',
       title: 'Society Stamps',
       summary:
@@ -468,6 +508,37 @@ const Wiki = (props) => {
   const bugsStubs = [
     {
 
+      key: 'Bugs',
+      title: 'Dye Bug',
+      summary:
+        'Dyes are not changing the color of the dyed item icon or being used up',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs dyes',
+    },
+    
+    {
+
+      key: 'Bugs',
+      title: 'Chalk Board Bug',
+      summary:
+        'Chalk Board is currently not working',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs chalk board',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Foc Stone Bug',
+      summary:
+        'For the first part of Focusing Stone, the Lesser Acolyte at the end (lowest tower) is just named Lich.  Otherwise works as retail',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs focusing stone',
+    },
+    {
+      
       key: 'Bugs',
       title: 'Recipes Bug',
       summary:

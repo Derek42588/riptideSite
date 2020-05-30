@@ -3,39 +3,55 @@ import React from 'react';
 import plusEv from '../img/pfps/plusPFP.png';
 import charmin from '../img/pfps/CharminPFP.png';
 import skippy from '../img/pfps/SkippyPFP.png';
-import skippyWin from '../img/skippyWin.png';
-import doom from '../img/pfps/doomPFP.png';
-import bbc from '../img/pfps/bbcPFP.png';
-import fizzle from '../img/pfps/fizzlePFP.png';
-import drunkFizzle from '../img/pfps/drunkfizzlePFP.png';
-import joblow from '../img/pfps/joblowPFP.png';
-import kingofengland from '../img/pfps/kingofenglandPFP.png';
-import mkm from '../img/pfps/mkmPFP.png';
-import mwb from '../img/pfps/mwbPFP.png';
-import ohren from '../img/pfps/ohrenPFP.png';
 import ricky from '../img/pfps/rickyPFP.png';
 import shadowen from '../img/pfps/shadowenPFP.png';
 import tindale from '../img/pfps/tindalePFP.png';
 import winguyen from '../img/pfps/winguyenPFP.png';
-import waerfleet from '../img/pfps/waerfleetPFP.png';
 import dark from '../img/pfps/darkPFP.png';
 import bz from '../img/pfps/bzPFP.png';
-import twisted from '../img/pfps/twistedPFP.png';
-import doesnttank from '../img/pfps/doesnttankPFP.png';
 import mmd from '../img/mmd.png';
 import pkTrophy from '../img/pkTrophy.png';
+import thrillWin from '../img/tournaments/thrillWinner.png';
+import platformPeople from '../img/tournaments/platformPeople.png';
+import platformWithText from '../img/tournaments/platformWithText.jpg';
+
+import george from '../img/pfps/georgePFP.png';
+import salami from '../img/pfps/salamiPFP.png';
+import shameless from '../img/pfps/shamelessPFP.png';
+import yeet from '../img/pfps/yeetPFP.png';
+import spec from '../img/pfps/specPFP.png';
+import bastards from '../img/pfps/bastardsPFP.png';
+import mike from '../img/pfps/mikePFP.png';
+import highGrav from '../img/pfps/yeetPFP.png';
+import pat from '../img/pfps/patPFP.png';
+import beatdown from '../img/pfps/beatdownPFP.png';
+
+
+/*
+
+the bastards *
+charmin
+coffee king *
+darkmade *
+beatdown *
+high grav *
+pat barcode *
+*/
 
 const Tournament = () => {
+
+
   return (
+    
     <div className="tournament">
       <h2 className="tournament__header">TOURNAMENTS</h2>
 
-      <div className="tournament__title-card tournament__title-card--110">
-        <h2 className="tournament__title">May 2020 110 Tournament</h2>
+      <div className="tournament__title-card tournament__title-card--single-elim">
+        <h2 className="tournament__title">May 2020 Single Elim</h2>
         <div className="tournament__prizes">
           <ul>
             <li className="tournament__prizes--prize">
-              1k
+              500
               <img
                 src={mmd}
                 alt="MMD note"
@@ -43,7 +59,7 @@ const Tournament = () => {
               />
             </li>
             <li className="tournament__prizes--prize">
-              150
+              100
               <img
                 src={pkTrophy}
                 alt="Pk Trophy"
@@ -51,9 +67,6 @@ const Tournament = () => {
               />
             </li>
             <li className="tournament__prizes--prize">Custom Wand Tailor</li>
-            <li className="tournament__prizes--prize">
-              Full Set of 8s
-            </li>
 
           </ul>
         </div>
@@ -61,22 +74,38 @@ const Tournament = () => {
       <a href = "/tournaments" className = "past-tournaments-button">
             <button className="btn">Past Tournaments</button>
           </a>
+          <img
+          src={platformPeople}
+          alt="Thrill Solo Shot"
+          className="tournament__winner"
+        />
+          <img
+          src={platformWithText}
+          alt="Skippy Tourney Discord"
+          className="tournament__winner"
+        />
+          <img
+          src={thrillWin}
+          alt="Skippy Tourney Discord"
+          className="tournament__winner"
+        />
       <div className="tournament__bracket">
+    
         <h2 className="header-medium header-medium--red header-medium--championship">
           Championship
         </h2>
         <div className="tournament__matchup tournament__matchup--championship">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={winguyen} alt="Skippy Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">3</div>
-            <div className="tournament__player-name">Winguyen</div>
+             <img src={plusEv} alt="Thrill Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">Thrill</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={doom} alt="Doom Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score">2</div>
+             <img src={bastards} alt="bastards Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Obi</div>
+            <div className="tournament__player-name">The Bastards</div>
         </div>
     </div>
     <h2 className="header-medium header-medium--red header-medium--semifinals">semifinals</h2>
@@ -84,29 +113,29 @@ const Tournament = () => {
     <div className="tournament__matchup tournament__matchup--semis-1">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={winguyen} alt="Winguyen Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">2</div>
-            <div className="tournament__player-name">Winguyen</div>
+             <img src={bastards} alt="bastards Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">The Bastards</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={charmin} alt="Charmin Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score">1</div>
+             <img src={spec} alt="Spec Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Charmin</div>
+            <div className="tournament__player-name">Specdeek</div>
         </div>
     </div>
     <div className="tournament__matchup tournament__matchup--semis-2">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={doom} alt="Doom Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">2</div>
-            <div className="tournament__player-name">Obi</div>
+             <img src={plusEv} alt="Thrill Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">Thrill</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={ricky} alt="Ricky Icon" className="tournament__player-icon"/>
+             <img src={skippy} alt="Skippy Icon" className="tournament__player-icon"/>
              <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Barcode Billy</div>
+            <div className="tournament__player-name">Skippy</div>
         </div>
     </div>
     <h2 className="header-medium header-medium--red header-medium--quarterfinals">quarterfinals</h2>
@@ -114,57 +143,57 @@ const Tournament = () => {
     <div className="tournament__matchup tournament__matchup--quarters-1">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={charmin} alt="Charmin Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">2</div>
-            <div className="tournament__player-name">Charmin</div>
+             <img src={spec} alt="Specdeek Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">Specdeek</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={mwb} alt="Mwb Icon" className="tournament__player-icon"/>
+             <img src={salami} alt="Salami Icon" className="tournament__player-icon"/>
              <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Xiabalba</div>
+            <div className="tournament__player-name">Salami</div>
         </div>
     </div>
     <div className="tournament__matchup tournament__matchup--quarters-2">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={winguyen} alt="Winguyen Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">2</div>
-            <div className="tournament__player-name">Winguyen</div>
+             <img src={bastards} alt="Bastards Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">Bastards</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={waerfleet} alt="Waer Icon" className="tournament__player-icon"/>
+             <img src={mike} alt="mike Icon" className="tournament__player-icon"/>
              <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Waerlock</div>
+            <div className="tournament__player-name">Coffee King</div>
         </div>
     </div>
     <div className="tournament__matchup tournament__matchup--quarters-3">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={ricky} alt="Ricky Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">2</div>
-            <div className="tournament__player-name">Barcode Billy</div>
+             <img src={skippy} alt="Skippy Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">Skippy</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={dark} alt="Dark Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score">1</div>
+             <img src={tindale} alt="tindale Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Darkmade</div>
+            <div className="tournament__player-name">Tindale</div>
         </div>
     </div>
     <div className="tournament__matchup tournament__matchup--quarters-4">
         
         <div className="tournament__player tournament__player--winner">
-             <img src={doom} alt="Doom Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score tournament__player-score--winner">2</div>
-            <div className="tournament__player-name">Obi</div>
+             <img src={plusEv} alt="Thrill Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score tournament__player-score--winner">1</div>
+            <div className="tournament__player-name">Thrill</div>
         </div>
         <div className="tournament__player tournament__player--loser">
-             <img src={skippy} alt="Skippy Icon" className="tournament__player-icon"/>
-             <div className="tournament__player-score">1</div>
+             <img src={pat} alt="Pat Icon" className="tournament__player-icon"/>
+             <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Skippy</div>
+            <div className="tournament__player-name">Pat</div>
         </div>
     </div>
         <h2 className="header-medium header-medium--red header-medium--round-2">
@@ -174,33 +203,56 @@ const Tournament = () => {
         <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--1">
           <div className="tournament__player tournament__player--winner">
             <img
-              src={charmin}
-              alt="Charmin Icon"
+              src={salami}
+              alt="Salami Icon"
               className="tournament__player-icon"
             />
             <div className="tournament__player-score tournament__player-score--winner">
-              2
+              1
             </div>
-            <div className="tournament__player-name">Charmin</div>
+            <div className="tournament__player-name">Salami</div>
           </div>
           <div className="tournament__player tournament__player--loser">
             <img
-              src={tindale}
-              alt="Tindale Icon"
+              src={ricky}
+              alt="ricky Icon"
               className="tournament__player-icon"
             />
-            <div className="tournament__player-score">1</div>
+            <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Tindale</div>
+            <div className="tournament__player-name">Ricky</div>
           </div>
         </div>
         <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--2">
           <div className="tournament__player  tournament__player--winner">
-            <img src={mwb} alt="MWB Icon" className="tournament__player-icon" />
+            <img src={spec} alt="Spec Icon" className="tournament__player-icon" />
             <div className="tournament__player-score tournament__player-score--winner">
-              2
+              1
             </div>
-            <div className="tournament__player-name">Xibalba</div>
+            <div className="tournament__player-name">Specdeek</div>
+          </div>
+          <div className="tournament__player tournament__player--loser">
+            <img
+              src={yeet}
+              alt="Yeet Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score">0</div>
+
+            <div className="tournament__player-name">Yeet Cannon</div>
+          </div>
+        </div>
+        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--3">
+          <div className="tournament__player tournament__player--winner">
+            <img
+              src={mike}
+              alt="mike Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score tournament__player-score--winner">
+              1
+            </div>
+            <div className="tournament__player-name">Coffee King</div>
           </div>
           <div className="tournament__player tournament__player--loser">
             <img
@@ -208,133 +260,31 @@ const Tournament = () => {
               alt="Shadowen Icon"
               className="tournament__player-icon"
             />
-            <div className="tournament__player-score">1</div>
-
-            <div className="tournament__player-name">Memphis Raines</div>
-          </div>
-        </div>
-        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--3">
-          <div className="tournament__player tournament__player--winner">
-            <img
-              src={waerfleet}
-              alt="Waerlock Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score tournament__player-score--winner">
-              2
-            </div>
-            <div className="tournament__player-name">Waerlock</div>
-          </div>
-          <div className="tournament__player tournament__player--loser">
-            <img
-              src={fizzle}
-              alt="Fizzle Icon"
-              className="tournament__player-icon"
-            />
             <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Oofski</div>
+            <div className="tournament__player-name">Memphis Raines</div>
           </div>
         </div>
         <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--4">
           <div className="tournament__player tournament__player--winner">
             <img
-              src={winguyen}
-              alt="Winguyen Icon"
+              src={bastards}
+              alt="The Bastards Icon"
               className="tournament__player-icon"
             />
             <div className="tournament__player-score tournament__player-score--winner">
-              2
+              1
             </div>
-            <div className="tournament__player-name">Winguyen</div>
+            <div className="tournament__player-name">The Bastards</div>
           </div>
           <div className="tournament__player tournament__player--loser">
-            <img src={bz} alt="BZ Icon" className="tournament__player-icon" />
+            <img src={charmin} alt="Charmin Icon" className="tournament__player-icon" />
             <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Ramsey</div>
+            <div className="tournament__player-name">Charmin</div>
           </div>
         </div>
         <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--5">
-          <div className="tournament__player tournament__player--winner">
-            <img
-              src={dark}
-              alt="Dark Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score tournament__player-score--winner">
-              2
-            </div>
-            <div className="tournament__player-name">
-              <div className="column-name">Darkmade</div>
-            </div>
-          </div>
-          <div className="tournament__player tournament__player--loser">
-            <img
-              src={kingofengland}
-              alt="KOE Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score">0</div>
-
-            <div className="tournament__player-name">
-              {' '}
-              <span>The</span>
-              <span>King</span>
-              <span>Of</span>
-              <span>England</span>
-            </div>
-          </div>
-        </div>
-        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--6">
-          <div className="tournament__player tournament__player--winner">
-            <img
-              src={ricky}
-              alt="Ricky Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score tournament__player-score--winner">
-              2
-            </div>
-            <div className="tournament__player-name">Barcode Billy</div>
-          </div>
-          <div className="tournament__player tournament__player--loser">
-            <img
-              src={joblow}
-              alt="Jo-Blow Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score">0</div>
-
-            <div className="tournament__player-name">jo-blow</div>
-          </div>
-        </div>
-        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--7">
-          <div className="tournament__player tournament__player--winner">
-            <img
-              src={doom}
-              alt="Doom Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score tournament__player-score--winner">
-              2
-            </div>
-            <div className="tournament__player-name">
-              <div className="column-name">Obi</div>
-            </div>
-          </div>
-          <div className="tournament__player tournament__player--loser">
-            <img
-              src={twisted}
-              alt="Twisted Icon"
-              className="tournament__player-icon"
-            />
-            <div className="tournament__player-score">0</div>
-
-            <div className="tournament__player-name">Twisted Heat</div>
-          </div>
-        </div>
-        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--8">
           <div className="tournament__player tournament__player--winner">
             <img
               src={skippy}
@@ -342,14 +292,89 @@ const Tournament = () => {
               className="tournament__player-icon"
             />
             <div className="tournament__player-score tournament__player-score--winner">
-              2
+              1
             </div>
-            <div className="tournament__player-name">Skippy</div>
+            <div className="tournament__player-name">
+              <div className="column-name">Skippy</div>
+            </div>
           </div>
           <div className="tournament__player tournament__player--loser">
             <img
-              src={doesnttank}
-              alt="Doesnt Tank Icon"
+              src={winguyen}
+              alt="Win Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score">0</div>
+
+            <div className="tournament__player-name">
+              Winguyen
+            </div>
+          </div>
+        </div>
+        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--6">
+          <div className="tournament__player tournament__player--winner">
+            <img
+              src={tindale}
+              alt="Tindale Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score tournament__player-score--winner">
+              1
+            </div>
+            <div className="tournament__player-name">Tindale</div>
+          </div>
+          <div className="tournament__player tournament__player--loser">
+            <img
+              src={dark}
+              alt="Darkmade Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score">0</div>
+
+            <div className="tournament__player-name">Darkmade</div>
+          </div>
+        </div>
+        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--7">
+          <div className="tournament__player tournament__player--winner">
+            <img
+              src={plusEv}
+              alt="Plus Ev Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score tournament__player-score--winner">
+              1
+            </div>
+            <div className="tournament__player-name">
+              <div className="column-name">Thrill</div>
+            </div>
+          </div>
+          <div className="tournament__player tournament__player--loser">
+            <img
+              src={beatdown}
+              alt="Beatdown Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score">0</div>
+
+            <div className="tournament__player-name">Beatdown</div>
+          </div>
+        </div>
+        <div className="tournament__matchup tournament__matchup--round-2 tournament__matchup--round-2--8">
+          <div className="tournament__player tournament__player--winner">
+            <img
+              src={pat}
+              alt="Pat Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score tournament__player-score--winner">
+              1
+            </div>
+            <div className="tournament__player-name">Pat</div>
+          </div>
+          <div className="tournament__player tournament__player--loser">
+            <img
+              src={highGrav}
+              alt="High Grav Icon"
               className="tournament__player-icon"
             />
             <div className="tournament__player-score">0</div>
@@ -358,7 +383,7 @@ const Tournament = () => {
               <div>
                 {/* className="column-name" */}
                 {/* <span>Memphis</span><span>Raines</span> */}
-                Daddy
+                High Grav
               </div>
             </div>
           </div>
@@ -367,27 +392,50 @@ const Tournament = () => {
           Round 1
         </h2>
 
-        <div className="tournament__matchup tournament__matchup--round-1">
+        <div className="tournament__matchup tournament__matchup--round-1 tournament__matchup--round-1--1">
           <div className="tournament__player tournament__player--winner">
             <img
-              src={charmin}
+              src={skippy}
               alt="Skippy Icon"
               className="tournament__player-icon"
             />
             <div className="tournament__player-score tournament__player-score--winner">
-              2
+              1
             </div>
-            <div className="tournament__player-name">Charmin</div>
+            <div className="tournament__player-name">Skippy</div>
           </div>
           <div className="tournament__player tournament__player--loser">
             <img
-              src={plusEv}
+              src={shameless}
               alt="Plus Ev Icon"
               className="tournament__player-icon"
             />
-            <div className="tournament__player-score">1</div>
+            <div className="tournament__player-score">0</div>
 
-            <div className="tournament__player-name">Plus Ev</div>
+            <div className="tournament__player-name">Shameless</div>
+          </div>
+        </div>
+        <div className="tournament__matchup tournament__matchup--round-1 tournament__matchup--round-1--2">
+          <div className="tournament__player tournament__player--winner">
+            <img
+              src={ricky}
+              alt="Ricky Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score tournament__player-score--winner">
+              1
+            </div>
+            <div className="tournament__player-name">Ricky</div>
+          </div>
+          <div className="tournament__player tournament__player--loser">
+            <img
+              src={george}
+              alt="George Icon"
+              className="tournament__player-icon"
+            />
+            <div className="tournament__player-score">0</div>
+
+            <div className="tournament__player-name">Zero</div>
           </div>
         </div>
       </div>

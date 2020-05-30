@@ -31,6 +31,8 @@ const Infinite = () => {
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">The creatures are: Tusker Slave, Drudge Ravener, Coral Golem, Lady Aerfalle, Virindi Paradox, Olthoi Queen</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">The Olthoi Queen will drop Nahmin Elgaz's Token of Valor.  Return this to Nahmin Eglaz to receive your reward</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3"><span className = "caps-italics">NOTE</span> Once you have completed the pre-trials, the War Trial is on a 20 hour timer.</li>
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3"><span className = "caps-italics">NOTE</span> Sometimes the next spawn in the chain of 6 mobs does not spawn properly.  Known issue and being worked on.</li>
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">If that happens to you, portal recall back to Lin and speak to Nahmin Elgaz again.  He will re-portal you into the colosseum and respawn the first mob.</li>
 
 
 
