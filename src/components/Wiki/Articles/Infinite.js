@@ -20,7 +20,7 @@ const Infinite = () => {
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">Travel to 52.9n, 62.2e and use the Essence of Enchantment to receive a Creature Magic Token</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">Give the token to Acolyte Jesdeh in Sawato at 28.4s, 59.5e</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3 caps-italics">Item Trial</li>
-                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">Travel to Acolyte Marah in Stonehold at 52.9n, 62.2e</li>
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">Travel to Acolyte Marah in Stonehold at 69.0n 21.7w</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">/tell him (like you do the Arwic Professors of Magic) the words of an Impen or Bane spell 40 times</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3">e.g. "Malar Quasith", "Malar Quaguz".  You must select tell from the chat options for NPCs while having them selected</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--infiniteManaStone--3 caps-italics">War Trial</li>
