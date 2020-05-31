@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './css/style.css';
 import {BrowserRouter, Route } from 'react-router-dom';
 import Landing from './components/Landing';
@@ -7,62 +7,54 @@ import ViewPlayer from './components/ViewPlayer';
 import ChangelogList from './components/Changelog/ChangelogList';
 import Header from './components/Header';
 import Setup from './components/Setup';
+import Utilities from './components/Utilities';
 import Wiki from './components/Wiki/Wiki';
 import Bugs from './components/Wiki/Articles/Bugs'
+import Tournaments from './components/Tournaments'
+import Shelf from './components/Shelf'
 
 
 function App() {
+
+  
+  const [showShelf, setShowShelf] = useState(false)
+
+  function toggleShelf() {
+    setShowShelf(!showShelf)
+  }
+
   return (
     <BrowserRouter>
       <div className = "fullApp">
-        <Header />
-        <Route exact path = "/" component = {Landing} />
+      <Header toggleShelf = {toggleShelf} />
+
+        <Shelf shelfVisible={showShelf} toggleShelf={toggleShelf} />
+      <div
+        className={'backdrop' + (showShelf ? ' visible' : '')}
+        onClick={() => toggleShelf()}
+      />
+        <Route exact path = '/' render = {() => <Landing shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
+        <Route exact path = '/changelog' render = {() => <ChangelogList shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
+        {/* <Route exact path = '/customcontent' render = {(props) => <Wiki shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} /> */}
+        <Route exact path = '/setup' render = {() => <Setup shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
+        <Route exact path = '/utilities' render = {() => <Utilities shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
+        {/* <Route exact path = '/wiki' render = {(props) => <Wiki shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} /> */}
+        <Route exact path = '/bugs' render = {() => <Bugs shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} />
+        <Route exact path = '/tournaments' render = {() => <Tournaments shelfVisible = {showShelf} toggleShelf = {toggleShelf}/>} /
+        >
+                  <Route path = "/wiki" component = {Wiki} />
+                  <Route path = "/customcontent" component = {Wiki} />
+
+{/*         
+
+        <Route exact path = "/setup" component = {Setup} />
+        <Route exact path = "/bugs" component = {Bugs} />
+        <Route exact path = "/tournaments" component = {Tournaments} /> */}
         <Route exact path = "/elo" component = {Elo} />
         <Route exact path = "/elo/:id" component = {ViewPlayer} />
-        <Route exact path = "/changelog" component = {ChangelogList} />
-        <Route exact path = "/customcontent" component = {Wiki} />
-        <Route exact path = "/setup" component = {Setup} />
-        <Route exact path = "/wiki" component = {Wiki} />
-        <Route exact path = "/bugs" component = {Bugs} />
       </div>
     </BrowserRouter>
-    // <div className="App">
-    //   <div className="container">
-        // <header className="header">
-        //   <ul className="nav">
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Links
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Setup
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Changelog
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Known Bugs
-        //       </a>
-        //     </li>
-        //     <li className="nav__item">
-        //       <a href="#" className="nav__link">
-        //         Custom Content
-        //       </a>
-        //     </li>
-        //   </ul>
-        // </header>
-    //     {Info()}
-    //     {Changelog()}
-    //     <div className="gallery">Gallery</div>
-    //     <footer className="footer">Footer</footer>
-    //   </div>
-    // </div>
+
   );
 }
 

@@ -115,6 +115,20 @@ const Vendors = () => {
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Karlun's Visage</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Asheron's Jumpsuit</li>
     <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Empyrean Jumpsuit</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Orb of the Bunny Booty</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Energy Crown</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Impious Staff</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Painter's Palette</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Penguin Masks</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Heavy Ursuin Coat</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Martine's Mask</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Crown of Anointed Blood</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Singularity Wands</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Red Rune Dagger</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Red Rune Wand</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Olthoibane Sword</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Paradox-touched Olthoi Dagger</li>
+    <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--pka--">Headdresses</li>
     {/* The Stag of Bellenesse, The Dragon of Power, Karlun's Visage, Asheron's Jumpsuit, Empyrean Jumpsuit */}
 </ul>
 

@@ -10,6 +10,11 @@ const bugs = () => {
             <img src={bugsSide} alt="Bugs" className="wiki__content-box__article__side-img"/>
             <div className="wiki__content-box__article__info">
             <ul className="wiki__content-box__article__info__list wiki__content-box__article__info__list--bugs">
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Chalk Board currently does not work</li>
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Kindling (Mage Armor and Focusing Stone quest) was causing crashes.  Fixed with 5/30/20 patch</li>
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Dye pots are not changing the color of the dyed items icon or being used up</li>
+
+                <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">For the first part of Focusing Stone, the Lesser Acolyte at the end (lowest tower) is just named Lich.  Otherwise works as retail</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Recipes for Shadow, Seasoned Explorer, and Undead slayer bugged.  Being worked on as of 5/15/20.</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Pathwarden NPCs currently broken **Fixed with 5/15/20 reset**</li>
                 <li className="wiki__content-box__article__info__list__item wiki__content-box__article__info__list__item--bugs--1">Font of Joji use flag not working properly</li>

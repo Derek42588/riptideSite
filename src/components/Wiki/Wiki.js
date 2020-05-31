@@ -7,18 +7,81 @@ import Qol from './Articles/Qol';
 import Vendors from './Articles/Vendors';
 import Quests from './Articles/Quests';
 import RiptideGem from './Articles/RiptideGem';
+import Infinite from './Articles/Infinite';
 import CandethKeep from './Articles/CandethKeep';
 import DarkIsle from './Articles/DarkIsle';
 import Bugs from './Articles/Bugs';
 
 import NotFound from './Articles/NotFound';
 
-const Wiki = () => {
-  const [view, setView] = useState('');
-  const [filter, setFilter] = useState('');
+const Wiki = (props) => {
+
+  
+
+  const [view, setView] = useState(props.location.search.split('?').join('').split('_').join(' ').split('%20').join(' ')  );
+  const [filter, setFilter] = useState(props.location.search.split('?').join('').split('_').join(' ').split('%20').join(' '))
 
 
   const stubs = [
+    {
+      key: 'Infinite Mana Stone',
+      title: 'Infiite Mana Stone',
+      summary:
+        'Custom quest for an infinite mana stone',
+      thumbnail: 'infiniteStub',
+      outsideFlag: "false",  
+      tags: 'quest quests infinite mana stone',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Dye Bug',
+      summary:
+        'Dyes are not changing the color of the dyed item icon or being used up',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs dyes',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Chalk Board Bug',
+      summary:
+        'Chalk Board is currently not working',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs chalk board',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Foc Stone Bug',
+      summary:
+        'For the first part of Focusing Stone, the Lesser Acolyte at the end (lowest tower) is just named Lich.  Otherwise works as retail',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs focusing stone',
+    },  
+    {
+
+      key: 'Bugs',
+      title: 'Recipes Bug',
+      summary:
+        'Recipes (undead slayer, shadow slayer, society armor and more) are causing issues.',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs focusing stone',
+    },
+    {
+      key: 'Society Stamps',
+      title: 'Society Stamps',
+      summary:
+        'For Society Stamps quest, the stamps are not in the chests at the end/as written on ACWiki, they are on the ground at start of the dungeon.  Otherwise work as retail',
+      thumbnail: 'societyStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Exploration_Society_Letters",
+      tags: 'quest quests society stamps explorer',
+    },
     {
       key: 'Tier 7',
       title: 'Tier 7 Changes',
@@ -102,7 +165,7 @@ const Wiki = () => {
         thumbnail: 'stipendStub',
         outsideFlag: "true",
         link: "https://asheron.fandom.com/wiki/Stipends",
-        tags: 'bug bugs shadow slayer',
+        tags: 'stipend stipends',
       },
     {
         key: 'Bugs',
@@ -284,6 +347,15 @@ const Wiki = () => {
 
   const questStubs = [
     {
+      key: 'Infinite Mana Stone',
+      title: 'Infiite Mana Stone',
+      summary:
+        'Custom quest for an infinite mana stone',
+      thumbnail: 'infiniteStub',
+      outsideFlag: "false",  
+      tags: 'quest quests infinite mana stone',
+    },
+    {
       key: 'GW Recall',
       title: 'GW Recall Quest',
       summary:
@@ -292,6 +364,16 @@ const Wiki = () => {
       outsideFlag: "true",  
       link: "https://asheron.fandom.com/wiki/Glenden_Wood_Invaders",
       tags: 'quest quests glenden wood gw recall',
+    },
+    {
+      key: 'Society Stamps',
+      title: 'Society Stamps',
+      summary:
+        'For Society Stamps quest, the stamps are not in the chests at the end/as written on ACWiki, they are on the ground at start of the dungeon.  Otherwise work as retail',
+      thumbnail: 'societyStub',
+      outsideFlag: "true",  
+      link: "https://asheron.fandom.com/wiki/Exploration_Society_Letters",
+      tags: 'quest quests society stamps explorer',
     },
     {
       key: 'Candeth Recall',
@@ -426,6 +508,37 @@ const Wiki = () => {
   const bugsStubs = [
     {
 
+      key: 'Bugs',
+      title: 'Dye Bug',
+      summary:
+        'Dyes are not changing the color of the dyed item icon or being used up',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs dyes',
+    },
+    
+    {
+
+      key: 'Bugs',
+      title: 'Chalk Board Bug',
+      summary:
+        'Chalk Board is currently not working',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs chalk board',
+    },
+    {
+
+      key: 'Bugs',
+      title: 'Foc Stone Bug',
+      summary:
+        'For the first part of Focusing Stone, the Lesser Acolyte at the end (lowest tower) is just named Lich.  Otherwise works as retail',
+      thumbnail: 'bugStub',
+      outsideFlag: "false",  
+      tags: 'bug bugs focusing stone',
+    },
+    {
+      
       key: 'Bugs',
       title: 'Recipes Bug',
       summary:
@@ -566,6 +679,13 @@ const Wiki = () => {
         return (
           <div className="wiki__content-box">
             <Pvp />
+          </div>
+        );
+      }
+      else if (view === 'Infinite Mana Stone') {
+        return (
+          <div className="wiki__content-box">
+            <Infinite />
           </div>
         );
       }

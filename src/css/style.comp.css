@@ -26,9 +26,71 @@
 .fullApp {
   display: grid;
   font-size: 2rem;
-  padding: 3rem;
-  overflow: hidden;
   z-index: 0; }
+
+.backdrop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.visible {
+  display: grid; }
+
+.Shelf {
+  background-color: #e43127;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 750;
+  left: 0;
+  top: 0;
+  display: grid;
+  transition: all .4s; }
+  .Shelf__list {
+    display: grid;
+    z-index: 850;
+    position: relative;
+    top: 15%;
+    left: -100%;
+    list-style: none;
+    color: #fff;
+    transition: all .6s;
+    align-self: start;
+    justify-self: start; }
+    .Shelf__list__item {
+      padding: .5rem;
+      width: 100%; }
+      .Shelf__list__item__sublist {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem; }
+        .Shelf__list__item__sublist__item__icon {
+          width: 2rem;
+          height: 2rem;
+          fill: #e43127;
+          transition: all .4s; }
+          .Shelf__list__item__sublist__item__icon:hover {
+            fill: #dcdcdd;
+            transform: scale(2); }
+      .Shelf__list__item__link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer; }
+      .Shelf__list__item:hover {
+        background-color: #4c5c68; }
+
+.shelfVisible {
+  width: 66%; }
+  .shelfVisible .Shelf__list {
+    top: 15%;
+    left: 33%; }
 
 .changelog {
   color: #bb271f;
@@ -173,28 +235,6 @@
       .changelogList__item__card a .btn {
         justify-self: center; }
 
-.footer {
-  background-color: #bb271f;
-  grid-column: 1 / -1; }
-
-.nav {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 2rem;
-  align-items: center; }
-  .nav__link:link, .nav__link:visited {
-    font-size: 1.4rem;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1.5rem;
-    display: block;
-    transition: all .2s; }
-  .nav__link:hover, .nav__link:active {
-    background-color: #46494c; }
-
 .gallery {
   background-color: #dcdcdd;
   grid-column: col-start 5 / span 4; }
@@ -248,27 +288,29 @@
 
 .header {
   background-color: #bb271f;
-  grid-column: 1 / -1; }
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 5.5vh; }
 
 .nav {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
-  align-items: center; }
+  align-items: center;
+  z-index: 1100; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
+    line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
     padding: 1.5rem;
     display: block;
     transition: all .2s; }
-    @media only screen and (max-width: 31.25em) {
-      .nav__link:link, .nav__link:visited {
-        padding: 0.5rem;
-        font-size: 1rem; } }
   .nav__link:hover, .nav__link:active {
     background-color: #46494c; }
   .nav--hamburger {
@@ -329,6 +371,10 @@
     @media only screen and (max-width: 31.25em) {
       .tournament__title-card {
         margin: 0 4rem; } }
+    .tournament__title-card--110 {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(187, 39, 31, 0.65)), url(../img/eatersTournament.PNG); }
+    .tournament__title-card--single-elim {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(187, 39, 31, 0.65)), url(../img/mayTourneySingle.PNG); }
   .tournament__title {
     text-align: center;
     grid-column: 1 / -1;
@@ -404,6 +450,10 @@
       @media only screen and (max-width: 31.25em) {
         .tournament__matchup--round-1 {
           grid-row: 11 / span 1; } }
+      .tournament__matchup--round-1--1 {
+        grid-column: 4 / span 2; }
+      .tournament__matchup--round-1--2 {
+        grid-column: 6 / span 2; }
     .tournament__matchup--championship {
       grid-column: 5 / span 2;
       grid-row: 2 / span 1; }
@@ -507,6 +557,11 @@
   .tournament .column-name {
     display: flex;
     flex-flow: column; }
+
+.past-tournaments-button {
+  margin: 3rem 0;
+  justify-self: center;
+  grid-column: 1/ -1; }
 
 .easter {
   background-image: linear-gradient(rgba(187, 39, 31, 0.77), rgba(255, 255, 255, 0.75));
@@ -716,12 +771,60 @@
       .cinco__img--2, .cinco__img--3, .cinco__img--4, .cinco__img--5 {
         grid-column: 1 / -1; } }
 
+.utilities {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(187, 39, 31, 0.75));
+  color: #bb271f;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content min-content repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh; }
+  .utilities__instructions {
+    list-style: none;
+    line-height: 1.2;
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    justify-self: center; }
+  .utilities__title {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    font-size: 6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 43.75em) {
+      .utilities__title {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .utilities__title {
+        font-size: 4rem;
+        padding-bottom: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .utilities__title {
+        font-size: 3rem;
+        letter-spacing: 0.1em; } }
+  .utilities__img {
+    width: 80%;
+    grid-column: 1 / -1;
+    justify-self: center; }
+    .utilities__img--1 {
+      grid-row: 3 / span 1; }
+    .utilities__img--2 {
+      grid-row: 4 / span 1; }
+    .utilities__img--3 {
+      grid-row: 5 / span 1; }
+  .utilities__instructions-item {
+    margin-bottom: 2rem; }
+    .utilities__instructions-item a {
+      text-decoration: none; }
+
 .setup {
   background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(187, 39, 31, 0.75));
   color: #bb271f;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content min-content repeat 3, 1fr;
+  grid-template-rows: min-content min-content repeat(3, 1fr);
   grid-gap: 2rem;
   padding: 2rem; }
   .setup__instructions {
