@@ -12,7 +12,7 @@ class Elo extends React.Component {
     }
   }
   componentDidMount() {
-    fetch("http://localhost:3000/")
+    fetch("http://riptide.ac:3000/")
       .then(res => res.json())
       .then(
         (result) => {
