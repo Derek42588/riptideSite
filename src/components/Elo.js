@@ -16,6 +16,7 @@ class Elo extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
+          debugger;
           console.log(result)
           this.setState({
             isLoaded: true,

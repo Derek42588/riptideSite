@@ -52,6 +52,21 @@
     @include respond(bpSmaller){
         grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
       }
+
+      &__item {
+
+        &--full {
+            @include respond(micro) {
+                display:none;
+            }
+        }
+
+        &--mobile {
+            @include respond(micro) {
+                width: 25%;
+            }
+        }
+      }
   
 }
 

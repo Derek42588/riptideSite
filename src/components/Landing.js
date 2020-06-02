@@ -23,10 +23,25 @@ const Landing = () => {
             <Link to ='/wiki/?infinite_mana_stone'>Infinite Mana Stone Quest added</Link>
             </li>
             <li className="changelog__item">
+            Some wall hooked items buffs have been fixed
+            </li>
+            <li className="changelog__item">
+            Aetheria and Cloaks will now drop on loot
+            </li>
+            <li className="changelog__item">
+            Spirit Drinker should be fixed
+            </li>
+            <li className="changelog__item">
+            Dye pots now work properly
+            </li>
+            <li className="changelog__item">
+            Melee combat fizzle fixed
+            </li>
+            <li className="changelog__item">
             All pieces of armor now get hit with attacks. Tink up every armor piece!
             </li>
             <li className="changelog__item">
-            Missile damage adjusted. You should no longer 1-shot. Testing locally gave me 400-430 crit + sneak shots on the head
+            Archer damage put under a configuration variable instead of hardcoded. Moved back to normal.
             </li>
             <li className="changelog__item">
             Item leveling is in. (Aetheria and Cloaks will drop soon after some additional testing)
