@@ -1449,9 +1449,8 @@ body {
 
 .elo__list {
   display: grid;
-  margin-top: 3rem; }
+  margin-top: 1.5rem; }
   .elo__list__item {
-    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 66%; }
