@@ -33,7 +33,7 @@ const Shelf = ({ toggleShelf, shelfVisible }) => {
                   Wiki
             </Link>
         </li>
-        <li className="nav__item nav__item--full">
+        <li className="Shelf__list__item" onClick = {() => toggleShelf()}>
             <Link to = "/elo" className = "nav__link">
                 ELO
               </Link>
