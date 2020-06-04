@@ -318,6 +318,12 @@
   @media only screen and (max-width: 43.75em) {
     .nav {
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr)); } }
+  @media only screen and (max-width: 31.25em) {
+    .nav__item--full {
+      display: none; } }
+  @media only screen and (max-width: 31.25em) {
+    .nav__item--mobile {
+      width: 25%; } }
 
 .btn {
   background-color: #bb271f;
@@ -1316,6 +1322,70 @@
   height: 3rem;
   width: 3rem; }
 
+.LoadingSpinner {
+  color: #8080ff;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease; }
+
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }
+
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }
+
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 *,
 *::after,
 *::before {
@@ -1376,3 +1446,99 @@ body {
 
 .bold {
   font-weight: bold; }
+
+.elo__list {
+  display: grid;
+  margin-top: 3rem; }
+  .elo__list__item {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 66%; }
+    @media only screen and (max-width: 50em) {
+      .elo__list__item {
+        width: 100%;
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .elo__list__item {
+        font-size: 1.25rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .elo__list__item {
+        font-size: 1rem;
+        padding: .5rem; } }
+    .elo__list__item--top5 {
+      width: 90%;
+      justify-self: center;
+      align-self: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content min-content min-content 40rem min-content;
+      padding: 1rem 15rem;
+      border: 1px solid orangered; }
+    .elo__list__item__showcasePicture-box {
+      grid-column: 1/-1;
+      grid-row: 4 / span 1;
+      justify-self: center;
+      align-self: center;
+      height: 100%;
+      width: 50%; }
+      .elo__list__item__showcasePicture-box__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block; }
+    .elo__list__item__rank-box {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      padding: 1rem;
+      grid-gap: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .elo__list__item__rank-box {
+          grid-gap: 1rem;
+          padding: .5rem; } }
+      .elo__list__item__rank-box__rank--top5 {
+        text-align: center;
+        color: #bb271f;
+        align-self: center;
+        font-size: 3.5rem;
+        grid-column: 1/ -1;
+        grid-row: 1 / span 1; }
+      .elo__list__item__rank-box__rating {
+        background-color: #bb271f;
+        text-align: center;
+        margin-right: 1rem;
+        color: white; }
+        .elo__list__item__rank-box__rating--top5 {
+          justify-self: center;
+          width: 100%;
+          align-self: center;
+          font-size: 3.5rem;
+          grid-column: 1/ -1;
+          grid-row: 2 / span 1;
+          margin: 0; }
+    .elo__list__item__player-box {
+      align-self: center; }
+      .elo__list__item__player-box--top5 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        grid-row: 3 / span 1; }
+        .elo__list__item__player-box--top5 a {
+          text-decoration: none; }
+    .elo__list__item__kill-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-items: center;
+      grid-gap: 2rem; }
+      .elo__list__item__kill-box--top5 {
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: center;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-row: 5 / span 1;
+        margin-top: 3rem; }
+    .elo__list__item__icon {
+      width: 2rem; }
+      .elo__list__item__icon--top5 {
+        justify-self: end; }

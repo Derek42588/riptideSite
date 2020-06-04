@@ -22,11 +22,6 @@ const Header = ({toggleShelf}) => {
               </a>
             </li>
             <li className="nav__item nav__item--full">
-            <Link to = "/setup" className = "nav__link">
-                Setup
-              </Link>
-            </li>
-            <li className="nav__item nav__item--full">
               <Link to = "/changelog" className = "nav__link">
                 Changelog
               </Link>

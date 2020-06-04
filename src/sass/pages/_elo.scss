@@ -1,0 +1,149 @@
+.elo{
+
+    &__list {
+        display: grid;
+        margin-top: 3rem;
+
+        &__item {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 66%;
+
+            @include respond(bpSmall) {
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+            @include respond (phone) {
+                font-size: 1.25rem;
+            }
+            @include respond (micro) {
+                font-size: 1rem;
+                padding: .5rem;
+            }
+           
+           
+            
+
+            &--top5 {
+                width: 90%;
+                justify-self: center;
+                align-self: center;
+                grid-template-columns: 1fr;
+                grid-template-rows: min-content min-content min-content 40rem min-content;
+                padding: 1rem 15rem;
+                border: 1px solid orangered;
+                // margin-bottom: 15rem;
+                
+
+            }
+
+            &__showcasePicture-box {
+                grid-column: 1 / - 1;
+                grid-row: 4 / span 1;
+                justify-self: center;
+                align-self: center;
+                height: 100%;
+                width: 50%;
+                &__image {
+                    width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+                }
+            }
+
+            &__rank-box{
+                display: grid;
+                grid-template-columns: min-content 1fr;
+                padding: 1rem;
+
+                grid-gap: 3rem;
+
+                // &--top5 {
+                //     grid-column: 1/ -1;
+                //     grid-row: 1 / span 1;
+                // }
+                @include respond(phone) {
+                    grid-gap: 1rem;
+                    padding: .5rem;
+                }
+
+                &__rank{
+
+                    &--top5{
+                        text-align: center;
+                        color: #bb271f;
+                        align-self: center;
+                        font-size: 3.5rem;
+                        grid-column: 1/ -1;
+                        grid-row: 1 / span 1;
+                    }
+                }
+
+                &__rating {
+                    background-color: #bb271f;
+                    text-align: center;
+                    margin-right: 1rem;
+                    color: white;
+
+                    &--top5 {
+                        justify-self: center;
+                        width: 100%;
+                        align-self: center;
+                        font-size: 3.5rem;
+                        grid-column: 1/ -1;
+                        grid-row: 2 / span 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+            &__player-box {
+                align-self: center;
+
+            
+                &--top5 {
+                    grid-column: 1 / -1;
+                    text-align: center;
+                    font-size: 3.5rem;
+                    text-transform: uppercase;
+                    grid-row : 3 / span 1;
+                    & a {
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+
+            &__kill-box {
+                display: grid;
+                // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+                align-items: center;
+                grid-gap: 2rem;
+
+                &--top5 {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    align-self: center;
+                    grid-template-columns: 1fr 1fr;
+                    width: 100%;
+                    grid-row : 5 / span 1;
+                    margin-top: 3rem;
+
+                }
+            }
+
+            &__icon {
+                width: 2rem;
+                
+                &--top5 {
+                    justify-self: end;
+                }
+            }
+        }
+    }
+}
