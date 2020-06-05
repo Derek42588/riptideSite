@@ -26,6 +26,12 @@ const Landing = () => {
             Some wall hooked items buffs have been fixed
             </li>
             <li className="changelog__item">
+            You can now hand Alcott your old Encrusted bloodstone, for one with more mana
+            </li>
+            <li className="changelog__item">
+            You can now hand Alcott your Arcane Aug Gem for the updated one that doesnt share use timer with Asheron's Lesser Benediction
+            </li>
+            <li className="changelog__item">
             Aetheria and Cloaks will now drop on loot
             </li>
             <li className="changelog__item">
