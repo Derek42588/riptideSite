@@ -34,7 +34,7 @@ const Shelf = ({ toggleShelf, shelfVisible }) => {
             </Link>
         </li>
         <li className="Shelf__list__item" onClick = {() => toggleShelf()}>
-            <Link to = "/elo" className = "nav__link">
+            <Link to = "/elo" className = "Shelf__list__item__link">
                 ELO
               </Link>
             </li>
