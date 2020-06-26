@@ -12,7 +12,7 @@ class ViewPlayer extends React.Component {
   }
   componentDidMount() {
     const { id } = this.props.match.params;
-    fetch(`http://riptide.ac:3000/byId/${id}`)
+    fetch(`http://localhost:3000/byId/${id}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -39,6 +39,7 @@ class ViewPlayer extends React.Component {
   }
   renderFlops(flop, index) {
     const name = flop.type === 'kill' ? flop.victimName : flop.killerName
+    console.log(flop.killerName == flop.victimName)
     return (
       <tr key={`flop-${index}`}>
         <td className={flop.type}>
@@ -58,8 +59,8 @@ class ViewPlayer extends React.Component {
       <div>
         <h1>{this.state.player.name}</h1>
         <strong>Rating:</strong> {this.state.player.rating} <br />
-        <strong>Kills:</strong> {this.getFlopsByType('kill').length} <br />
-        <strong>Deaths:</strong> {this.getFlopsByType('death').length} <br />
+        <strong>Kills:</strong> {this.state.player.kills} <br />
+        <strong>Deaths:</strong> {this.state.player.deaths} <br />
         <table>
           <thead>
             <tr>

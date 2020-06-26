@@ -12,29 +12,33 @@ class Elo extends React.Component {
       error: null,
       isLoaded: false,
       eloList: [],
+      recentKills: [],
     };
   }
   componentDidMount() {
-    fetch('http://riptide.ac:3000/')
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          console.log(result);
+    const urls = [
+      "http://localhost:3000/",
+      "http://localhost:3000/recentKills"
+    ]
+    const requests = urls.map(url => fetch(url))
+    Promise.all(requests)
+      .then(responses => Promise.all(responses.map(r => r.json())))
+      .then(data => {
           this.setState({
             isLoaded: true,
-            eloList: result,
-          });
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error,
-          });
-        }
-      );
+            eloList: data[0],
+            recentKills: data[1]
+          })
+      })
+  }
+  renderRecentKill(kill, index) {
+    console.log(kill)
+    return (
+      <tr key={`kill-${index}`}>
+        <td>{kill['killerName']}</td>
+        <td>{kill['victimName']}</td>
+      </tr>
+    )
   }
 
   renderEloList(player, index) {
@@ -94,13 +98,13 @@ class Elo extends React.Component {
               alt="Pk Trophy"
               className="elo__list__item__icon"
             /> */} <span>K</span>
-            {this.getFlopsByType(player, 'kill').length}
+            {player.kills}
             {/* <img
               src={lifestone}
               alt="Lifestone"
               className="elo__list__item__icon"
             /> */} <span>D</span>
-            {this.getFlopsByType(player, 'death').length}
+            {player.deaths}
           </div>
         </li>
       );
@@ -118,6 +122,17 @@ class Elo extends React.Component {
         <ul className="elo__list">
           {this.state.eloList.map(this.renderEloList.bind(this))}
         </ul>
+        {/* <table>
+          <thead>
+            <tr>
+              <th>Killer</th>
+              <th>Victim</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.recentKills.map(this.renderRecentKill.bind(this))}
+          </tbody>
+        </table> */}
       </div>
     )} else {
       return (
