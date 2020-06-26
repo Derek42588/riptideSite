@@ -12,7 +12,7 @@ class ViewPlayer extends React.Component {
   }
   componentDidMount() {
     const { id } = this.props.match.params;
-    fetch(`http://localhost:3000/byId/${id}`)
+    fetch(`http://riptide.ac:3000/byId/${id}`)
       .then(res => res.json())
       .then(
         (result) => {

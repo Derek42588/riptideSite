@@ -17,8 +17,8 @@ class Elo extends React.Component {
   }
   componentDidMount() {
     const urls = [
-      "http://localhost:3000/",
-      "http://localhost:3000/recentKills"
+      "http://riptide.ac:3000/",
+      "http://riptide.ac:3000/recentKills"
     ]
     const requests = urls.map(url => fetch(url))
     Promise.all(requests)
